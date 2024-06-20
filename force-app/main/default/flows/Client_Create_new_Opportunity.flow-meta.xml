@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Assign_Opportunity_Data</name>
+        <label>Assign Opportunity Data</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>AccountID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Client_record_to_create_oppty.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OpptyName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Client_record_to_create_oppty.Opportunity_Name__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Client</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Client_record_to_create_oppty.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Opportunity_Name</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Opportunity_Name</name>
+        <label>Check Opportunity Name</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <defaultConnectorLabel>Not available</defaultConnectorLabel>
+        <rules>
+            <name>Yes_name_available</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Client_record_to_create_oppty.Opportunity_Name__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_New_Opportunity</targetReference>
+            </connector>
+            <label>Yes, name available</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>GetMembership</name>
+        <dataType>String</dataType>
+        <expression>	IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;Growing Young Empower&quot;), &quot;Growing Young Empower&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;Growing Young Enhance&quot;), &quot;Growing Young Enhance&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;Growing Young Enrich&quot;), &quot;Growing Young Enrich&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;BDE 20&quot;), &quot;BDE 20&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;BD Elite&quot;), &quot;BD Elite&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;Platinum 20&quot;), &quot;Platinum 20&quot;,
+IF(INCLUDES({!Get_Client_record_to_create_oppty.Membership_type__c} ,&quot;Platinum&quot;), &quot;Platinum&quot;,&quot;&quot;
+)))))))</expression>
+    </formulas>
+    <formulas>
+        <name>OpportunityName</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!Get_Client_record_to_create_oppty.Opportunity_Name__c})</expression>
+    </formulas>
+    <interviewLabel>Client: Create new Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Client: Create new Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_New_Opportunity</name>
+        <label>Create New Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>Client</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>OpportunityName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Opp_Membership_Type__c</field>
+            <value>
+                <elementReference>GetMembership</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Client_record_to_create_oppty</name>
+        <label>Get Client record to create oppty</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Opportunity_Data</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Client_record_to_create_oppty</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Client</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>OpptyName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

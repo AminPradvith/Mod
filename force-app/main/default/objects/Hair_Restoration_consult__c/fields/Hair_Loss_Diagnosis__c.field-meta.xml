@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Loss_Diagnosis__c</fullName>
+    <label>Hair Loss Diagnosis</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alopecia Androgenetica</fullName>
+                <default>false</default>
+                <label>Alopecia Androgenetica</label>
+            </value>
+            <value>
+                <fullName>Alopecia Areata</fullName>
+                <default>false</default>
+                <label>Alopecia Areata</label>
+            </value>
+            <value>
+                <fullName>Central Centrifugal Cicatricial Alopecia</fullName>
+                <default>false</default>
+                <label>Central Centrifugal Cicatricial Alopecia</label>
+            </value>
+            <value>
+                <fullName>Seborrheic Dermatitis</fullName>
+                <default>false</default>
+                <label>Seborrheic Dermatitis</label>
+            </value>
+            <value>
+                <fullName>Decalvans</fullName>
+                <default>false</default>
+                <label>Decalvans</label>
+            </value>
+            <value>
+                <fullName>Folliculitis</fullName>
+                <default>false</default>
+                <label>Folliculitis</label>
+            </value>
+            <value>
+                <fullName>Alopecia Areata Incognito</fullName>
+                <default>false</default>
+                <label>Alopecia Areata Incognito</label>
+            </value>
+            <value>
+                <fullName>Frontal Fibrosing Alopecia</fullName>
+                <default>false</default>
+                <label>Frontal Fibrosing Alopecia</label>
+            </value>
+            <value>
+                <fullName>Lichen Planus Pillaris</fullName>
+                <default>false</default>
+                <label>Lichen Planus Pillaris</label>
+            </value>
+            <value>
+                <fullName>Telogen Effluvium</fullName>
+                <default>false</default>
+                <label>Telogen Effluvium</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

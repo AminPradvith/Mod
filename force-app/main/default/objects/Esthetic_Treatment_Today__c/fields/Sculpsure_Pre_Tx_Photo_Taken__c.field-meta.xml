@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sculpsure_Pre_Tx_Photo_Taken__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Sculpsure Pre Tx Photo Taken</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

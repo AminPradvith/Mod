@@ -1,0 +1,104 @@
+<template>
+	<lightning-card title="Aesthetic Consult Recommendations">
+		<lightning-layout>
+			<lightning-layout-item size="12">
+				<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-border_left slds-border_right"
+					aria-labelledby="element-with-table-label other-element-with-table-label">
+					<thead>
+						<tr>
+							<th scope="col">Membership</th>
+							<th scope="col">Treatments</th>
+							<th scope="col">Areas</th>
+							<th scope="col">Units/Syringe</th>
+							<th scope="col">Product</th>
+							<th scope="col">Comments</th>
+							<th scope="col">Membership Consult Notes</th>
+							<th scope="col">Other Notes</th>
+							<th scope="col">
+								<lightning-button-icon class="slds-float--right" icon-name="utility:add"
+									onclick={handleAddRow}>
+								</lightning-button-icon>
+
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<template for:each={filterList} for:item="filterData" for:index="index">
+
+							<tr key={filterData.id}>
+								<td class="slds-size_2-of-12">
+									<!--<c-custom-multi-pick-list showpills="true" role="cm-picklist"></c-custom-multi-pick-list>-->
+								<lightning-combobox name="Membership" data-index={index} variant="label-hidden"
+										value={AestheticconsultMembership} placeholder=""
+										onchange={MembershiphandleChange} options={AestheticconsultMembership}>
+									</lightning-combobox>
+
+									<!--<div class="slds-p-around_xx-small" style="display:grid;" >
+										<template for:each={allValues} for:item="val" >
+											<div key={index}>
+											<lightning-pill key={val} label={val} name={val} onremove={handleRemove}>
+											</lightning-pill>
+											</div>
+										</template>
+									</div>
+									<template if:true={showMore}>
+										<a  role="more" >Show/Hide</a>
+									</template>-->
+								</td>
+								<td class="slds-size_1-of-7">
+									<!--<c-custom-multi-pick-list label="Treatments"  showpills="true" role="cm-picklist"></c-custom-multi-pick-list>-->
+									<lightning-combobox name="Treatments" data-index={index} variant="label-hidden"
+										placeholder="" onchange={handleChange} value={value}
+										options={Aestheticconsulttreatments}>
+									</lightning-combobox>
+								</td>
+								<td class="slds-size_1-of-7">
+									<!--<c-custom-multi-pick-list label="Areas"  showpills="true" role="cm-picklist"></c-custom-multi-pick-list>-->
+									<lightning-combobox name="Areas" data-index={index} variant="label-hidden"
+										placeholder="" onchange={handleChange} value={value}
+										options={Aestheticconsultarea}>
+									</lightning-combobox>
+								</td>
+								<td class="slds-size_1-of-7">
+									<lightning-input type="Units/Syringe" name="accPhone" data-index={index}
+										value={filterData.Phone} variant="label-hidden" onchange={handleChange}>
+									</lightning-input>
+								</td>
+								<td class="slds-size_1-of-7">
+									<!--<c-custom-multi-pick-list label="Product" showpills="true" role="cm-picklist"></c-custom-multi-pick-list>-->
+
+									<lightning-combobox name="Product" data-index={index} variant="label-hidden"
+										placeholder="" onchange={handleChange} value={value}
+										options={Aestheticconsultproducts}>
+									</lightning-combobox>
+								</td>
+								<td class="slds-size_1-of-7">
+									<lightning-input type="Comments" name="accPhone" data-index={index} value={value}
+										variant="label-hidden" onchange={handleChange}>
+									</lightning-input>
+								</td>
+								<td class="slds-size_1-of-7">
+									<lightning-textarea name="MembershipConsultNotes" data-index={index} value={value}
+										variant="label-hidden" onchange={handleChange}></lightning-textarea>
+								</td>
+								<td class="slds-size_1-of-7">
+									<lightning-textarea name="OtherNotes" data-index={index} value={value}
+										variant="label-hidden" onchange={handleChange}></lightning-textarea>
+								</td>
+								<td class="slds-size_1-of-11">
+									<lightning-button-icon data-index={filterData.id} class="slds-float--right"
+										icon-name="action:delete" onclick={handleRemoveRow}>
+									</lightning-button-icon>
+								</td>
+							</tr>
+						</template>
+					</tbody>
+				</table>
+			</lightning-layout-item>
+		</lightning-layout>
+		<p slot="footer">
+			<lightning-button class="Custom-button" variant="brand" label="Save" onclick={saveRows}>
+			</lightning-button>
+		</p>
+	</lightning-card>
+</template>

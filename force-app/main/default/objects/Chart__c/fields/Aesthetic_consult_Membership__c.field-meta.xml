@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aesthetic_consult_Membership__c</fullName>
+    <label>Aesthetic consult Membership</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already a Member</fullName>
+                <default>false</default>
+                <label>Already a Member</label>
+            </value>
+            <value>
+                <fullName>Enhance Membership</fullName>
+                <default>false</default>
+                <label>Enhance Membership</label>
+            </value>
+            <value>
+                <fullName>Empower Membership</fullName>
+                <default>false</default>
+                <label>Empower Membership</label>
+            </value>
+            <value>
+                <fullName>Enrich Membership</fullName>
+                <default>false</default>
+                <label>Enrich Membership</label>
+            </value>
+            <value>
+                <fullName>Body Contour Membership</fullName>
+                <default>false</default>
+                <label>Body Contour Membership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

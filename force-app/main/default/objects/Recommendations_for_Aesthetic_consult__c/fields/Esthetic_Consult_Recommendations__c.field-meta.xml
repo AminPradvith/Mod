@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Esthetic_Consult_Recommendations__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Esthetic Consult Recommendations</label>
+    <referenceTo>Aesthetic_Consult_Recommendations__c</referenceTo>
+    <relationshipLabel>Recommendations for Esthetic consults</relationshipLabel>
+    <relationshipName>Recommendations_for_Esthetic_consults</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

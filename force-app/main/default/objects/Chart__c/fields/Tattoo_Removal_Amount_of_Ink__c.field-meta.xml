@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal_Amount_of_Ink__c</fullName>
+    <label>Tattoo Removal Amount of Ink</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 point for amateur</fullName>
+                <default>false</default>
+                <label>1 point for amateur</label>
+            </value>
+            <value>
+                <fullName>2 points for minimal</fullName>
+                <default>false</default>
+                <label>2 points for minimal</label>
+            </value>
+            <value>
+                <fullName>3 points for moderate</fullName>
+                <default>false</default>
+                <label>3 points for moderate</label>
+            </value>
+            <value>
+                <fullName>4 points for significant</fullName>
+                <default>false</default>
+                <label>4 points for significant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

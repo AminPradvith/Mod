@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Membership_Type__c</fullName>
+    <description>Growing Young Empower, Growing Young Enhance, Growing Young Enrich, Body Contour</description>
+    <label>Membership Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Growing Young Empower</fullName>
+                <default>false</default>
+                <label>Growing Young Empower</label>
+            </value>
+            <value>
+                <fullName>Growing Young Enhance</fullName>
+                <default>false</default>
+                <label>Growing Young Enhance</label>
+            </value>
+            <value>
+                <fullName>Growing Young Enrich</fullName>
+                <default>false</default>
+                <label>Growing Young Enrich</label>
+            </value>
+            <value>
+                <fullName>Body Contour</fullName>
+                <default>false</default>
+                <label>Body Contour</label>
+            </value>
+            <value>
+                <fullName>Non-Member</fullName>
+                <default>false</default>
+                <label>Non-Member</label>
+            </value>
+            <value>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+                <label>Deceased</label>
+            </value>
+            <value>
+                <fullName>Bad Account</fullName>
+                <default>false</default>
+                <label>Bad Account</label>
+            </value>
+            <value>
+                <fullName>Not Allowed on Premise</fullName>
+                <default>false</default>
+                <label>Not Allowed on Premise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Hair_Loss_Past_Treatments__c</fullName>
+    <label>General Hair Loss Past Treatments</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nothing</fullName>
+                <default>false</default>
+                <label>Nothing</label>
+            </value>
+            <value>
+                <fullName>Biotin supplements</fullName>
+                <default>false</default>
+                <label>Biotin supplements</label>
+            </value>
+            <value>
+                <fullName>Viviscal</fullName>
+                <default>false</default>
+                <label>Viviscal</label>
+            </value>
+            <value>
+                <fullName>Nutrafol</fullName>
+                <default>false</default>
+                <label>Nutrafol</label>
+            </value>
+            <value>
+                <fullName>Intralesional corticosteroids</fullName>
+                <default>false</default>
+                <label>Intralesional corticosteroids</label>
+            </value>
+            <value>
+                <fullName>Topical corticosteroids</fullName>
+                <default>false</default>
+                <label>Topical corticosteroids</label>
+            </value>
+            <value>
+                <fullName>Medicated shampoos</fullName>
+                <default>false</default>
+                <label>Medicated shampoos</label>
+            </value>
+            <value>
+                <fullName>Oral antibiotics</fullName>
+                <default>false</default>
+                <label>Oral antibiotics</label>
+            </value>
+            <value>
+                <fullName>Topical antibiotics</fullName>
+                <default>false</default>
+                <label>Topical antibiotics</label>
+            </value>
+            <value>
+                <fullName>Oral antifungals</fullName>
+                <default>false</default>
+                <label>Oral antifungals</label>
+            </value>
+            <value>
+                <fullName>Topical antifungals</fullName>
+                <default>false</default>
+                <label>Topical antifungals</label>
+            </value>
+            <value>
+                <fullName>Propecia (Finasteride)</fullName>
+                <default>false</default>
+                <label>Propecia (Finasteride)</label>
+            </value>
+            <value>
+                <fullName>Rogaine (Minoxidil)</fullName>
+                <default>false</default>
+                <label>Rogaine (Minoxidil)</label>
+            </value>
+            <value>
+                <fullName>Avodart (Dutasteride)</fullName>
+                <default>false</default>
+                <label>Avodart (Dutasteride)</label>
+            </value>
+            <value>
+                <fullName>Aldactone (Spironolactone)</fullName>
+                <default>false</default>
+                <label>Aldactone (Spironolactone)</label>
+            </value>
+            <value>
+                <fullName>PRP</fullName>
+                <default>false</default>
+                <label>PRP</label>
+            </value>
+            <value>
+                <fullName>Low Level Laser Therapy</fullName>
+                <default>false</default>
+                <label>Low Level Laser Therapy</label>
+            </value>
+            <value>
+                <fullName>Hair fibers</fullName>
+                <default>false</default>
+                <label>Hair fibers</label>
+            </value>
+            <value>
+                <fullName>Scalp micropigmentation</fullName>
+                <default>false</default>
+                <label>Scalp micropigmentation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

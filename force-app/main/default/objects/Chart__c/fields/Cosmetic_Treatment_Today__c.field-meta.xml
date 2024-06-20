@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cosmetic_Treatment_Today__c</fullName>
+    <label>Cosmetic Treatment Today</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Botox/Dysport</fullName>
+                <default>false</default>
+                <label>Botox/Dysport</label>
+            </value>
+            <value>
+                <fullName>Hydrafacial</fullName>
+                <default>false</default>
+                <label>Hydrafacial</label>
+            </value>
+            <value>
+                <fullName>Peel</fullName>
+                <default>false</default>
+                <label>Peel</label>
+            </value>
+            <value>
+                <fullName>Weight Loss Injections</fullName>
+                <default>false</default>
+                <label>Weight Loss Injections</label>
+            </value>
+            <value>
+                <fullName>Dermal Filler</fullName>
+                <default>false</default>
+                <label>Dermal Filler</label>
+            </value>
+            <value>
+                <fullName>IPL</fullName>
+                <default>false</default>
+                <label>IPL</label>
+            </value>
+            <value>
+                <fullName>Sculptra Body</fullName>
+                <default>false</default>
+                <label>Sculptra Body</label>
+            </value>
+            <value>
+                <fullName>Dermaplaning</fullName>
+                <default>false</default>
+                <label>Dermaplaning</label>
+            </value>
+            <value>
+                <fullName>Kybella</fullName>
+                <default>false</default>
+                <label>Kybella</label>
+            </value>
+            <value>
+                <fullName>SkinPen Microneedling</fullName>
+                <default>false</default>
+                <label>SkinPen Microneedling</label>
+            </value>
+            <value>
+                <fullName>Emsculpt</fullName>
+                <default>false</default>
+                <label>Emsculpt</label>
+            </value>
+            <value>
+                <fullName>Laser Hair Removal</fullName>
+                <default>false</default>
+                <label>Laser Hair Removal</label>
+            </value>
+            <value>
+                <fullName>Tattoo Removal</fullName>
+                <default>false</default>
+                <label>Tattoo Removal</label>
+            </value>
+            <value>
+                <fullName>Facial</fullName>
+                <default>false</default>
+                <label>Facial</label>
+            </value>
+            <value>
+                <fullName>Laser Vein Removal</fullName>
+                <default>false</default>
+                <label>Laser Vein Removal</label>
+            </value>
+            <value>
+                <fullName>TruSculpt</fullName>
+                <default>false</default>
+                <label>TruSculpt</label>
+            </value>
+            <value>
+                <fullName>Fractional Laser</fullName>
+                <default>false</default>
+                <label>Fractional Laser</label>
+            </value>
+            <value>
+                <fullName>Microdermabrasion</fullName>
+                <default>false</default>
+                <label>Microdermabrasion</label>
+            </value>
+            <value>
+                <fullName>Vanquish</fullName>
+                <default>false</default>
+                <label>Vanquish</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

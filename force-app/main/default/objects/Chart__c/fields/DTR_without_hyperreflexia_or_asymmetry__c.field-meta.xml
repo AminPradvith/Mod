@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DTR_without_hyperreflexia_or_asymmetry__c</fullName>
+    <description>Neuro DTR without hyperreflexia or asymmetry</description>
+    <externalId>false</externalId>
+    <label>DTR without hyperreflexia or asymmetry</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

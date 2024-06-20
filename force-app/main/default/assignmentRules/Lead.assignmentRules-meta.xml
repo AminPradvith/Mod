@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Location Rule</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Kissimmee_FL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Kissimmee</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Lake_Mary_FL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Lake Mary</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Nashua_NH</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Nashua</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Ocoee_FL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Ocoee</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Oviedo_FL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Oviedo</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Winter_PArk_FL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Location__c</field>
+                <operation>equals</operation>
+                <value>CMS Winter Park</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

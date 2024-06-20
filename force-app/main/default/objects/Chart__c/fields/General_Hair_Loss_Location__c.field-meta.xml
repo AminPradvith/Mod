@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Hair_Loss_Location__c</fullName>
+    <label>General Hair Loss Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>everywhere</fullName>
+                <default>false</default>
+                <label>everywhere</label>
+            </value>
+            <value>
+                <fullName>hairline</fullName>
+                <default>false</default>
+                <label>hairline</label>
+            </value>
+            <value>
+                <fullName>frontal area</fullName>
+                <default>false</default>
+                <label>frontal area</label>
+            </value>
+            <value>
+                <fullName>mid-scalp</fullName>
+                <default>false</default>
+                <label>mid-scalp</label>
+            </value>
+            <value>
+                <fullName>mid-part line widening</fullName>
+                <default>false</default>
+                <label>mid-part line widening</label>
+            </value>
+            <value>
+                <fullName>temples</fullName>
+                <default>false</default>
+                <label>temples</label>
+            </value>
+            <value>
+                <fullName>crown</fullName>
+                <default>false</default>
+                <label>crown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

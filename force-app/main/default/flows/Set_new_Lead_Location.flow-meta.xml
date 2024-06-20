@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Assignment_opp_stageOpen</name>
+        <label>Assignment opp stage Open</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Location__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Records_1.Primary_Location__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Company</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Records_1.Primary_Location__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assignment_opp_stage_Open</name>
+        <label>Copy 1 of Assignment opp stage Open</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Location__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CMS Lake Mary</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Company</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CMS Lake Mary</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Decision_1</name>
+        <label>Decision 1</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Assignment_opp_stage_Open</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Decision_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Records_1.Primary_Location__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_opp_stageOpen</targetReference>
+            </connector>
+            <label>check User Location</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Set new Lead Location {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set new Lead Location</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Records_1</name>
+        <label>Get user</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Records_1</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

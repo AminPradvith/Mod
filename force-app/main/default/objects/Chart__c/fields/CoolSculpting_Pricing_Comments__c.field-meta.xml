@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CoolSculpting_Pricing_Comments__c</fullName>
+    <externalId>false</externalId>
+    <label>CoolSculpting Pricing Comments</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

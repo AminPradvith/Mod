@@ -1,0 +1,32 @@
+<template>
+    <div class="container">
+        <template if:true={images}>
+            <template for:each={images} for:item="image">
+                <div key={image.id} class="canvas-container" data-id={image.id}>
+                    <canvas class="image-canvas" data-id={image.id}></canvas>
+                    <canvas class="markup-canvas" data-id={image.id}></canvas>
+                </div>
+            </template>
+        </template>
+        <!-- <div class="toolbar">
+            <button class="pen-button" onclick={toggleToolMode} data-tool="pen" title="Pen">✏️</button>
+            <button class="color-picker-button" title="color picker" onclick={openColorPicker}>
+                <span class="color-icon"></span>
+                <input type="color" class="color-picker" onchange={handleColorChange} />
+            </button>
+            <button class="eraser-button" title="Eraser" onclick={toggleToolMode} data-tool="eraser">🧽</button>
+            <button class="text-button" title="Text" onclick={toggleToolMode} data-tool="text">📝</button>
+            <button class="line-button" title="line" onclick={toggleToolMode} data-tool="line">📏</button>
+            <button class="zoom-in-button" title="Zoom-In" onclick={zoomIn}>➕</button>
+            <button class="zoom-out-button" title="Zoom-Out" onclick={zoomOut}>➖</button>
+            <button class="date-button" title="Date Stamp" onclick={toggleToolMode} data-tool="date">📅</button>
+            <div class="stamp-container">
+                <button class="number-stamp-button" title="Stamp" onclick={toggleToolMode} data-tool="numberStamp">🔢</button>
+                <select class="number-select" title="Stamp List" onchange={handleNumberChange}>
+                    
+                </select>
+            </div>
+            <button class="save-button" onclick={saveImages}>Save Image</button>
+        </div> -->
+    </div> 
+</template>

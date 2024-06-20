@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discussed_with_Patient__c</fullName>
+    <description>Tattoo Removal Consult</description>
+    <label>Discussed with Patient</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Medical History, Allergies, Current Medications</fullName>
+                <default>false</default>
+                <label>Medical History, Allergies, Current Medications</label>
+            </value>
+            <value>
+                <fullName>Process and Procedure</fullName>
+                <default>false</default>
+                <label>Process and Procedure</label>
+            </value>
+            <value>
+                <fullName>Discomfort and Topical Numbing Cream</fullName>
+                <default>false</default>
+                <label>Discomfort and Topical Numbing Cream</label>
+            </value>
+            <value>
+                <fullName>After Care</fullName>
+                <default>false</default>
+                <label>After Care</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

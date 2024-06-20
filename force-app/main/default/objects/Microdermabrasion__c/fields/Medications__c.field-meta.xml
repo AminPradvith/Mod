@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medications__c</fullName>
+    <label>Medications</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Antiviral Prophylaxis</fullName>
+                <default>false</default>
+                <label>Antiviral Prophylaxis</label>
+            </value>
+            <value>
+                <fullName>Betamethasone</fullName>
+                <default>false</default>
+                <label>Betamethasone</label>
+            </value>
+            <value>
+                <fullName>Triamcinolone Acetonide</fullName>
+                <default>false</default>
+                <label>Triamcinolone Acetonide</label>
+            </value>
+            <value>
+                <fullName>Oral Methyl Prednisolone</fullName>
+                <default>false</default>
+                <label>Oral Methyl Prednisolone</label>
+            </value>
+            <value>
+                <fullName>Bacitracin Ointment</fullName>
+                <default>false</default>
+                <label>Bacitracin Ointment</label>
+            </value>
+            <value>
+                <fullName>Neosporin Ointment</fullName>
+                <default>false</default>
+                <label>Neosporin Ointment</label>
+            </value>
+            <value>
+                <fullName>Topical Hydrocortisone</fullName>
+                <default>false</default>
+                <label>Topical Hydrocortisone</label>
+            </value>
+            <value>
+                <fullName>Tylenol</fullName>
+                <default>false</default>
+                <label>Tylenol</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

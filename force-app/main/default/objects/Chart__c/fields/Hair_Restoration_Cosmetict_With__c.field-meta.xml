@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Restoration_Cosmetict_With__c</fullName>
+    <label>Hair Restoration Cosmetict With</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>with CCC</fullName>
+                <default>false</default>
+                <label>with CCC</label>
+            </value>
+            <value>
+                <fullName>with aesthetician</fullName>
+                <default>false</default>
+                <label>with aesthetician</label>
+            </value>
+            <value>
+                <fullName>Provider</fullName>
+                <default>false</default>
+                <label>Provider</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

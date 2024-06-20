@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal_Location__c</fullName>
+    <label>Tattoo Removal Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 point for Head/Neck/Face</fullName>
+                <default>false</default>
+                <label>1 point for Head/Neck/Face</label>
+            </value>
+            <value>
+                <fullName>2 points for Upper Trunk/Shoulder</fullName>
+                <default>false</default>
+                <label>2 points for Upper Trunk/Shoulder</label>
+            </value>
+            <value>
+                <fullName>3 points for Lower Trunk / Upper Leg</fullName>
+                <default>false</default>
+                <label>3 points for Lower Trunk / Upper Leg</label>
+            </value>
+            <value>
+                <fullName>4 points for Lower arm/leg</fullName>
+                <default>false</default>
+                <label>4 points for Lower arm/leg</label>
+            </value>
+            <value>
+                <fullName>5 points for wrist/hand/ankle/foot</fullName>
+                <default>false</default>
+                <label>5 points for wrist/hand/ankle/foot</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

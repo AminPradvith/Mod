@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hormone_Plan_Vit_D3_D3_K2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Hormone Plan Vit D3 D3/K2</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

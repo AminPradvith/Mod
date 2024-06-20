@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Botox_Dysport_Procedure_Injectable__c</fullName>
+    <label>Botox/Dysport Procedure Injectable</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Botox</fullName>
+                <default>false</default>
+                <label>Botox</label>
+            </value>
+            <value>
+                <fullName>Dysport</fullName>
+                <default>false</default>
+                <label>Dysport</label>
+            </value>
+            <value>
+                <fullName>Restylane</fullName>
+                <default>false</default>
+                <label>Restylane</label>
+            </value>
+            <value>
+                <fullName>Restylane Contour</fullName>
+                <default>false</default>
+                <label>Restylane Contour</label>
+            </value>
+            <value>
+                <fullName>Restylane Defyne</fullName>
+                <default>false</default>
+                <label>Restylane Defyne</label>
+            </value>
+            <value>
+                <fullName>Restylane Refyne</fullName>
+                <default>false</default>
+                <label>Restylane Refyne</label>
+            </value>
+            <value>
+                <fullName>Restylane Lyft</fullName>
+                <default>false</default>
+                <label>Restylane Lyft</label>
+            </value>
+            <value>
+                <fullName>Restylane Silk</fullName>
+                <default>false</default>
+                <label>Restylane Silk</label>
+            </value>
+            <value>
+                <fullName>Sculptra Aesthetic</fullName>
+                <default>false</default>
+                <label>Sculptra Aesthetic</label>
+            </value>
+            <value>
+                <fullName>Volbella</fullName>
+                <default>false</default>
+                <label>Volbella</label>
+            </value>
+            <value>
+                <fullName>Voluma</fullName>
+                <default>false</default>
+                <label>Voluma</label>
+            </value>
+            <value>
+                <fullName>Vollure</fullName>
+                <default>false</default>
+                <label>Vollure</label>
+            </value>
+            <value>
+                <fullName>Juvederm Ultra</fullName>
+                <default>false</default>
+                <label>Juvederm Ultra</label>
+            </value>
+            <value>
+                <fullName>Juvederm Ultra Plus</fullName>
+                <default>false</default>
+                <label>Juvederm Ultra Plus</label>
+            </value>
+            <value>
+                <fullName>Restylane Kysse</fullName>
+                <default>false</default>
+                <label>Restylane Kysse</label>
+            </value>
+            <value>
+                <fullName>Hylenex</fullName>
+                <default>false</default>
+                <label>Hylenex</label>
+            </value>
+            <value>
+                <fullName>Volux</fullName>
+                <default>false</default>
+                <label>Volux</label>
+            </value>
+            <value>
+                <fullName>Skinvive</fullName>
+                <default>false</default>
+                <label>Skinvive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

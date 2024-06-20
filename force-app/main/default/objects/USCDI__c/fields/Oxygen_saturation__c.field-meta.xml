@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oxygen_saturation__c</fullName>
+    <description>~USCDI v1 CCDA - Pulse Oximetry (NEW!)</description>
+    <label>Oxygen saturation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

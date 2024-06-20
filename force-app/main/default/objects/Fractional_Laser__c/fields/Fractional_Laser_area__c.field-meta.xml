@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fractional_Laser_area__c</fullName>
+    <label>Fractional Laser area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Face</fullName>
+                <default>false</default>
+                <label>Face</label>
+            </value>
+            <value>
+                <fullName>Neck</fullName>
+                <default>false</default>
+                <label>Neck</label>
+            </value>
+            <value>
+                <fullName>Chest</fullName>
+                <default>false</default>
+                <label>Chest</label>
+            </value>
+            <value>
+                <fullName>Scar</fullName>
+                <default>false</default>
+                <label>Scar</label>
+            </value>
+            <value>
+                <fullName>Hands</fullName>
+                <default>false</default>
+                <label>Hands</label>
+            </value>
+            <value>
+                <fullName>Stretch Marks</fullName>
+                <default>false</default>
+                <label>Stretch Marks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

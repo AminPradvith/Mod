@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Category__c</fullName>
+    <label>Product Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Facial</fullName>
+                <default>false</default>
+                <label>Facial</label>
+            </value>
+            <value>
+                <fullName>Membership</fullName>
+                <default>false</default>
+                <label>Membership</label>
+            </value>
+            <value>
+                <fullName>Membership Cancellation</fullName>
+                <default>false</default>
+                <label>Membership Cancellation</label>
+            </value>
+            <value>
+                <fullName>No Show/ CX Fee</fullName>
+                <default>false</default>
+                <label>No Show/ CX Fee</label>
+            </value>
+            <value>
+                <fullName>Consultation</fullName>
+                <default>false</default>
+                <label>Consultation</label>
+            </value>
+            <value>
+                <fullName>Body Contour</fullName>
+                <default>false</default>
+                <label>Body Contour</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Fractional Laser Treatment</fullName>
+                <default>false</default>
+                <label>Fractional Laser Treatment</label>
+            </value>
+            <value>
+                <fullName>Pro-Rate for Growing Young Memberships</fullName>
+                <default>false</default>
+                <label>Pro-Rate for Growing Young Memberships</label>
+            </value>
+            <value>
+                <fullName>Intense Pulsed Light Theraphy</fullName>
+                <default>false</default>
+                <label>Intense Pulsed Light Theraphy</label>
+            </value>
+            <value>
+                <fullName>Laser Hair Removal</fullName>
+                <default>false</default>
+                <label>Laser Hair Removal</label>
+            </value>
+            <value>
+                <fullName>Past Due Balance</fullName>
+                <default>false</default>
+                <label>Past Due Balance</label>
+            </value>
+            <value>
+                <fullName>Visia Skin Analysis</fullName>
+                <default>false</default>
+                <label>Visia Skin Analysis</label>
+            </value>
+            <value>
+                <fullName>Laser Tattoo Removal</fullName>
+                <default>false</default>
+                <label>Laser Tattoo Removal</label>
+            </value>
+            <value>
+                <fullName>Tip for Provider</fullName>
+                <default>false</default>
+                <label>Tip for Provider</label>
+            </value>
+            <value>
+                <fullName>Membership upgrade</fullName>
+                <default>false</default>
+                <label>Membership upgrade</label>
+            </value>
+            <value>
+                <fullName>Leg Vein Removal</fullName>
+                <default>false</default>
+                <label>Leg Vein Removal</label>
+            </value>
+            <value>
+                <fullName>Neurotoxin- Injectable</fullName>
+                <default>false</default>
+                <label>Neurotoxin- Injectable</label>
+            </value>
+            <value>
+                <fullName>Dermal Filler-Injectable</fullName>
+                <default>false</default>
+                <label>Dermal Filler-Injectable</label>
+            </value>
+            <value>
+                <fullName>Monthly Membership Facial Add-On</fullName>
+                <default>false</default>
+                <label>Monthly Membership Facial Add-On</label>
+            </value>
+            <value>
+                <fullName>Upgrade Monthly Membership Facial</fullName>
+                <default>false</default>
+                <label>Upgrade Monthly Membership Facial</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

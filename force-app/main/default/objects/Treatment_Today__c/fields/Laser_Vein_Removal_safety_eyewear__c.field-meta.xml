@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laser_Vein_Removal_safety_eyewear__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Laser Vein Removal safety eyewear applied</description>
+    <label>Laser Vein Removal safety eyewear</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

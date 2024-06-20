@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emsculpt_body_area__c</fullName>
+    <label>Emsculpt body area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abdomen</fullName>
+                <default>false</default>
+                <label>Abdomen</label>
+            </value>
+            <value>
+                <fullName>Arm Pit Fat</fullName>
+                <default>false</default>
+                <label>Arm Pit Fat</label>
+            </value>
+            <value>
+                <fullName>Arms</fullName>
+                <default>false</default>
+                <label>Arms</label>
+            </value>
+            <value>
+                <fullName>Bra Fat</fullName>
+                <default>false</default>
+                <label>Bra Fat</label>
+            </value>
+            <value>
+                <fullName>Buttocks</fullName>
+                <default>false</default>
+                <label>Buttocks</label>
+            </value>
+            <value>
+                <fullName>Chin</fullName>
+                <default>false</default>
+                <label>Chin</label>
+            </value>
+            <value>
+                <fullName>Flanks</fullName>
+                <default>false</default>
+                <label>Flanks</label>
+            </value>
+            <value>
+                <fullName>Inner Thighs</fullName>
+                <default>false</default>
+                <label>Inner Thighs</label>
+            </value>
+            <value>
+                <fullName>Knees</fullName>
+                <default>false</default>
+                <label>Knees</label>
+            </value>
+            <value>
+                <fullName>Outer Thighs</fullName>
+                <default>false</default>
+                <label>Outer Thighs</label>
+            </value>
+            <value>
+                <fullName>Posterior Thighs</fullName>
+                <default>false</default>
+                <label>Posterior Thighs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal_Scarring_Tissue_Change__c</fullName>
+    <label>Tattoo Removal Scarring &amp; Tissue Change</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 points for No Scarring</fullName>
+                <default>false</default>
+                <label>0 points for No Scarring</label>
+            </value>
+            <value>
+                <fullName>1 point for Minimal Scarring</fullName>
+                <default>false</default>
+                <label>1 point for Minimal Scarring</label>
+            </value>
+            <value>
+                <fullName>3 points for Moderate Scarring</fullName>
+                <default>false</default>
+                <label>3 points for Moderate Scarring</label>
+            </value>
+            <value>
+                <fullName>5 points for Significant Scarring</fullName>
+                <default>false</default>
+                <label>5 points for Significant Scarring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

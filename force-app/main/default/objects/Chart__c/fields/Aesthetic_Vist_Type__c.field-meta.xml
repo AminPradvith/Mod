@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aesthetic_Vist_Type__c</fullName>
+    <label>Aesthetic Vist Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consult</fullName>
+                <default>false</default>
+                <label>Consult</label>
+            </value>
+            <value>
+                <fullName>Treatment Today</fullName>
+                <default>false</default>
+                <label>Treatment Today</label>
+            </value>
+            <value>
+                <fullName>Follow-Up</fullName>
+                <default>false</default>
+                <label>Follow-Up</label>
+            </value>
+            <value>
+                <fullName>Medical History</fullName>
+                <default>false</default>
+                <label>Medical History</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

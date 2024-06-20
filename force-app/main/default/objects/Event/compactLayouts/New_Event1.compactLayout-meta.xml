@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Event1</fullName>
+    <fields>OwnerId</fields>
+    <fields>Procedure_Name__c</fields>
+    <fields>StartDateTime</fields>
+    <label>New Event 1</label>
+</CompactLayout>

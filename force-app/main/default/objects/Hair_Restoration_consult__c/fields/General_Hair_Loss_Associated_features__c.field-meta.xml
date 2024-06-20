@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Hair_Loss_Associated_features__c</fullName>
+    <label>General Hair Loss Associated features</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RECENT EVENTS</fullName>
+                <default>false</default>
+                <label>RECENT EVENTS</label>
+            </value>
+            <value>
+                <fullName>Patient is on Testosterone (cream, injection, patch, oral, pellets)</fullName>
+                <default>false</default>
+                <label>Patient is on Testosterone (cream, injection, patch, oral, pellets)</label>
+            </value>
+            <value>
+                <fullName>Patient recently started a new medication.</fullName>
+                <default>false</default>
+                <label>Patient recently started a new medication.</label>
+            </value>
+            <value>
+                <fullName>Patient has had a major surger just prior to hair loss.</fullName>
+                <default>false</default>
+                <label>Patient has had a major surger just prior to hair loss.</label>
+            </value>
+            <value>
+                <fullName>Patient has had a severe illness just prior to hair loss.</fullName>
+                <default>false</default>
+                <label>Patient has had a severe illness just prior to hair loss.</label>
+            </value>
+            <value>
+                <fullName>Patient has had a pregnancy just prior to hair loss.</fullName>
+                <default>false</default>
+                <label>Patient has had a pregnancy just prior to hair loss.</label>
+            </value>
+            <value>
+                <fullName>Patient has had a traumatic injury to the scalp</fullName>
+                <default>false</default>
+                <label>Patient has had a traumatic injury to the scalp</label>
+            </value>
+            <value>
+                <fullName>Patient had a facelift/forehead lift</fullName>
+                <default>false</default>
+                <label>Patient had a facelift/forehead lift</label>
+            </value>
+            <value>
+                <fullName>Patient has a scar on the scalp</fullName>
+                <default>false</default>
+                <label>Patient has a scar on the scalp</label>
+            </value>
+            <value>
+                <fullName>Patient has a history of a weight loss procedure HAIR</fullName>
+                <default>false</default>
+                <label>Patient has a history of a weight loss procedure HAIR</label>
+            </value>
+            <value>
+                <fullName>Patient&apos;s hair falls out in clumps</fullName>
+                <default>false</default>
+                <label>Patient&apos;s hair falls out in clumps</label>
+            </value>
+            <value>
+                <fullName>Patient has found excessive hair in shower, and/or comb</fullName>
+                <default>false</default>
+                <label>Patient has found excessive hair in shower, and/or comb</label>
+            </value>
+            <value>
+                <fullName>DIET/VITAMINS/SUPPLEMENTS</fullName>
+                <default>false</default>
+                <label>DIET/VITAMINS/SUPPLEMENTS</label>
+            </value>
+            <value>
+                <fullName>Patient takes a daily vitamin.</fullName>
+                <default>false</default>
+                <label>Patient takes a daily vitamin.</label>
+            </value>
+            <value>
+                <fullName>Patient takes a daily iron supplement.</fullName>
+                <default>false</default>
+                <label>Patient takes a daily iron supplement.</label>
+            </value>
+            <value>
+                <fullName>Patient is on a special diet.</fullName>
+                <default>false</default>
+                <label>Patient is on a special diet.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

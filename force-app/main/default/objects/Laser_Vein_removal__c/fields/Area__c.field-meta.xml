@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area__c</fullName>
+    <label>Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Right Upper</fullName>
+                <default>false</default>
+                <label>Right Upper</label>
+            </value>
+            <value>
+                <fullName>Right Lower</fullName>
+                <default>false</default>
+                <label>Right Lower</label>
+            </value>
+            <value>
+                <fullName>Left Upper</fullName>
+                <default>false</default>
+                <label>Left Upper</label>
+            </value>
+            <value>
+                <fullName>Left Lower</fullName>
+                <default>false</default>
+                <label>Left Lower</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

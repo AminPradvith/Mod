@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TruSculpt__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>TruSculpt</label>
+    <referenceTo>TruSculpt__c</referenceTo>
+    <relationshipLabel>TruSculpt(S)</relationshipLabel>
+    <relationshipName>TruSculpt_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

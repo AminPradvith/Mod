@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_yourDiagnosis_When__c</fullName>
+    <description>Eyelash Hair Loss Questionnaire
+what is your diagnosis, when were you diagnosed and what treatments have your tried?</description>
+    <externalId>false</externalId>
+    <label>What is your diagnosis/When?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Family_members_with_same_symptoms__c</fullName>
+    <label>Family members with same symptoms</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mother</fullName>
+                <default>false</default>
+                <label>Mother</label>
+            </value>
+            <value>
+                <fullName>Father</fullName>
+                <default>false</default>
+                <label>Father</label>
+            </value>
+            <value>
+                <fullName>Brother</fullName>
+                <default>false</default>
+                <label>Brother</label>
+            </value>
+            <value>
+                <fullName>Sister</fullName>
+                <default>false</default>
+                <label>Sister</label>
+            </value>
+            <value>
+                <fullName>Maternal GF</fullName>
+                <default>false</default>
+                <label>Maternal GF</label>
+            </value>
+            <value>
+                <fullName>Maternal GM</fullName>
+                <default>false</default>
+                <label>Maternal GM</label>
+            </value>
+            <value>
+                <fullName>Paternal GF</fullName>
+                <default>false</default>
+                <label>Paternal GF</label>
+            </value>
+            <value>
+                <fullName>Paternal GM</fullName>
+                <default>false</default>
+                <label>Paternal GM</label>
+            </value>
+            <value>
+                <fullName>Uncle</fullName>
+                <default>false</default>
+                <label>Uncle</label>
+            </value>
+            <value>
+                <fullName>Aunt</fullName>
+                <default>false</default>
+                <label>Aunt</label>
+            </value>
+            <value>
+                <fullName>Cousin</fullName>
+                <default>false</default>
+                <label>Cousin</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

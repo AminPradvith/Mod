@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_health_Difficulty_having_orgasms__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>General health Difficulty having orgasms</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

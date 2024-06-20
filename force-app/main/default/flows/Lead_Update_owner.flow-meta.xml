@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Lead_created_by_users_manually</name>
+        <label>Lead created by users manually</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Do Nothing</defaultConnectorLabel>
+        <rules>
+            <name>First_Name_of_owner_not_Todd</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LeadOwnerFirstName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Todd</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Records_1</targetReference>
+            </connector>
+            <label>First Name of owner not Todd</label>
+        </rules>
+    </decisions>
+    <description>Updates status to Connected/Contracted since the user manually entering the lead has presumably talked directly with the client</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>LeadOwnerFirstName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Owner:User.FirstName}</expression>
+    </formulas>
+    <interviewLabel>Lead: Update owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead: Update Status if owner not Todd</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Records_1</name>
+        <label>Update Records 1</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Connected/Contacted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lead_created_by_users_manually</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

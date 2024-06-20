@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Hair_Loss_Timing__c</fullName>
+    <label>General Hair Loss  Timing</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>slowly and gradually</fullName>
+                <default>false</default>
+                <label>slowly and gradually</label>
+            </value>
+            <value>
+                <fullName>moderately</fullName>
+                <default>false</default>
+                <label>moderately</label>
+            </value>
+            <value>
+                <fullName>fast</fullName>
+                <default>false</default>
+                <label>fast</label>
+            </value>
+            <value>
+                <fullName>very fast</fullName>
+                <default>false</default>
+                <label>very fast</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

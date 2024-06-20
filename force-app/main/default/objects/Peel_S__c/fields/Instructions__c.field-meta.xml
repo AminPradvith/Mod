@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructions__c</fullName>
+    <label>Instructions</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>do not pick at exfoliating skin</fullName>
+                <default>false</default>
+                <label>do not pick at exfoliating skin</label>
+            </value>
+            <value>
+                <fullName>do not reapply makeup while in the office</fullName>
+                <default>false</default>
+                <label>do not reapply makeup while in the office</label>
+            </value>
+            <value>
+                <fullName>avoid exertion on the day of treatment</fullName>
+                <default>false</default>
+                <label>avoid exertion on the day of treatment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

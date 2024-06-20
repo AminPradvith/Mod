@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal_Size__c</fullName>
+    <label>Tattoo Removal Size</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XXS 2x2cm -</fullName>
+                <default>false</default>
+                <label>XXS 2x2cm -</label>
+            </value>
+            <value>
+                <fullName>XS-5X5cm</fullName>
+                <default>false</default>
+                <label>XS-5X5cm</label>
+            </value>
+            <value>
+                <fullName>S-10x10cm</fullName>
+                <default>false</default>
+                <label>S-10x10cm</label>
+            </value>
+            <value>
+                <fullName>M-15x15cm</fullName>
+                <default>false</default>
+                <label>M-15x15cm</label>
+            </value>
+            <value>
+                <fullName>L - 20x20cm</fullName>
+                <default>false</default>
+                <label>L - 20x20cm</label>
+            </value>
+            <value>
+                <fullName>XL-25x25cm</fullName>
+                <default>false</default>
+                <label>XL-25x25cm</label>
+            </value>
+            <value>
+                <fullName>XXL-35x35cm</fullName>
+                <default>false</default>
+                <label>XXL-35x35cm</label>
+            </value>
+            <value>
+                <fullName>Eyebrow Tattoo</fullName>
+                <default>false</default>
+                <label>Eyebrow Tattoo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

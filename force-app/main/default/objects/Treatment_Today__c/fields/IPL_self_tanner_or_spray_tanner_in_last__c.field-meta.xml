@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IPL_self_tanner_or_spray_tanner_in_last__c</fullName>
+    <description>IPL self tanner/spray tanner in last 7 Days</description>
+    <label>IPL self tanner/spray tanner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

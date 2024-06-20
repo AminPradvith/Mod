@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Tattoo Removal</label>
+    <referenceTo>Tattoo_Removal__c</referenceTo>
+    <relationshipLabel>Tattoo Removal(S)</relationshipLabel>
+    <relationshipName>Tattoo_Removal_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

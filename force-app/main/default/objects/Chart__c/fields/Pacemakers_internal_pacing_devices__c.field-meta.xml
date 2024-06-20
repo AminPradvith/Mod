@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pacemakers_internal_pacing_devices__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>History Of Pacemakers/internal pacing devices</description>
+    <label>Pacemakers/internal pacing devices</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Noticed_any_redness_flaking_inflammation__c</fullName>
+    <description>Have you noticed any redness/flaking/inflammation to the face area?</description>
+    <label>Noticed any redness/flaking/inflammation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

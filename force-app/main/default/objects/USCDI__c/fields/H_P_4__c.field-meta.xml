@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>H_P_4__c</fullName>
+    <description>~USCDI v1 CCDA - H &amp; P</description>
+    <label>H &amp; P 4</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

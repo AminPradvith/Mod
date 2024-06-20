@@ -1,0 +1,123 @@
+<template>
+    <c-custom-toast></c-custom-toast>
+    <div class="slds-card" style="font-family: 'Open Sans', sans-serif">
+        <div class="slds-scrollable" style="height:auto;width:auto;overflow-y:hidden" tabindex="0">
+            <div if:true={CoolSculptAestheticianTable}>
+                <div class="slds-card__header slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:account" size="large"></lightning-icon>
+                    </div>
+ 
+                    <div class="slds-media__body slds-card__header-title slds-text-title_bold"
+                        style="font-size: 22px;font-weight:bold">
+                        CoolSculpt Aesthetician
+                    </div>
+                </div>
+                <table class="slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer">
+                    <thead>
+                      <tr>
+                            <th scope="col" style="width: 3rem;">Sr.</th>
+                            <th scope="col">Area</th>
+                            <th scope="col">Applicator</th>
+                            <th scope="col">Number</th>
+                            <th scope="col">Minutes</th>
+                            <th scope="col">Notes</th>
+                            <th scope="col" style="width: 3rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={listOfRecommendations} for:item="rec">
+                            <tr key={rec.index} class="slds-hint-parent">
+                                <td style="font-weight: bold;">
+                                    <lightning-formatted-number value={rec.index}></lightning-formatted-number>.
+                                </td>
+                                <td>
+                                    <div class="CoolSculptAestheticianArea-dropdown">
+                                        <lightning-input name="Area__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.CoolSculptAestheticianAreaValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:false={rec.Area__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={CoolSculptAestheticianAreaValues} for:item="CoolSculptAestheticianAreaVal">
+                                                    <div class="picklist-item" name="CoolSculptAestheticianAreaValues"
+                                                        data-id={rec.index} key={CoolSculptAestheticianAreaVal}
+                                                        onclick={handleCoolSculptAestheticianAreaSelect} value={CoolSculptAestheticianAreaVal}>
+                                                        {CoolSculptAestheticianAreaVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.CoolSculptAestheticianAreaValuesList} for:item="CoolSculptAestheticianAreaVal">
+                                                <div key={CoolSculptAestheticianAreaVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{CoolSculptAestheticianAreaVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={CoolSculptAestheticianAreaVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveCoolSculptAestheticianAreaPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="CoolSculptAestheticianApplicator-dropdown">
+                                        <lightning-input name="Applicator__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.CoolSculptAestheticianApplicatorValues} onclick={handleInputClick}
+                                            onkeydown={handleKeydown}></lightning-input>
+                                        <template if:false={rec.Applicator__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={CoolSculptAestheticianApplicatorValues} for:item="CoolSculptAestheticianApplicatorVal">
+                                                    <div class="picklist-item" name="CoolSculptAestheticianApplicatorValues" data-id={rec.index}
+                                                        key={CoolSculptAestheticianApplicatorVal} onclick={handleCoolSculptAestheticianApplicatorSelect}
+                                                        value={CoolSculptAestheticianApplicatorVal}>{CoolSculptAestheticianApplicatorVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.CoolSculptAestheticianApplicatorValuesList} for:item="CoolSculptAestheticianApplicatorVal">
+                                                <div key={CoolSculptAestheticianApplicatorVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{CoolSculptAestheticianApplicatorVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={ProductVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveCoolSculptAestheticianApplicatorPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+                        
+                                <td>
+                                    <lightning-input type="number" name="Number__c" data-id={rec.index} value={rec.Number__c}
+                                        variant="label-hidden" onchange={handleNumberChange}></lightning-input>
+                                </td>
+                                <td>
+                                    <lightning-input type="number" name="Minutes__c" data-id={rec.index} value={rec.Minutes__c}
+                                        variant="label-hidden" onchange={handleMinutesChange}></lightning-input>
+                                </td>
+                                <td>
+                                    <lightning-input name="Notes__c" data-id={rec.index} value={rec.Notes__c}
+                                        variant="label-hidden" onchange={handleNotesChange}></lightning-input>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+ 
+         
+         <!-----  <div class="slds-docked-form-footer" > !---->
+            
+            </div>
+            <lightning-modal-footer class="my-modal-footer">
+                <button class="slds-button slds-button_brand" disabled={isSaveDisabled} onclick={createRecommendations}>Save</button>
+ 
+            </lightning-modal-footer>
+ 
+        <!--</div> !-->
+    </div>
+</template>

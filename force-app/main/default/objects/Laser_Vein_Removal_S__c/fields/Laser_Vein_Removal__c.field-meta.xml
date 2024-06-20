@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laser_Vein_Removal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Laser Vein Removal</label>
+    <referenceTo>Laser_Vein_removal__c</referenceTo>
+    <relationshipLabel>Laser Vein Removal(S)</relationshipLabel>
+    <relationshipName>Laser_Vein_Removal_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

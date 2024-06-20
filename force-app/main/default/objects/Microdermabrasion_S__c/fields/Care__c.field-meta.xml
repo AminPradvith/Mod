@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care__c</fullName>
+    <label>Care</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>avoid alpha hydroxy acid</fullName>
+                <default>false</default>
+                <label>avoid alpha hydroxy acid</label>
+            </value>
+            <value>
+                <fullName>avoid hydroquinone</fullName>
+                <default>false</default>
+                <label>avoid hydroquinone</label>
+            </value>
+            <value>
+                <fullName>avoid tretinoin</fullName>
+                <default>false</default>
+                <label>avoid tretinoin</label>
+            </value>
+            <value>
+                <fullName>avoid sun exposure</fullName>
+                <default>false</default>
+                <label>avoid sun exposure</label>
+            </value>
+            <value>
+                <fullName>use antibiotics/antivirals</fullName>
+                <default>false</default>
+                <label>use antibiotics/antivirals</label>
+            </value>
+            <value>
+                <fullName>use moisturizer</fullName>
+                <default>false</default>
+                <label>use moisturizer</label>
+            </value>
+            <value>
+                <fullName>use sunscreen</fullName>
+                <default>false</default>
+                <label>use sunscreen</label>
+            </value>
+            <value>
+                <fullName>use topical hydrocortisone</fullName>
+                <default>false</default>
+                <label>use topical hydrocortisone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

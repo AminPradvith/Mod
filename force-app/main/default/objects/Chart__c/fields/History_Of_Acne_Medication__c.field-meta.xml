@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>History_Of_Acne_Medication__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>History Of Acne Medication</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

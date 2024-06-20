@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Status_Definitions__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Lead – new lead to be nurtured/new lead.&quot; +BR() +
+&quot;CONNECTED/CONTRACTED:&quot;+ BR()+
+&quot;.....&quot;+&quot;Left message:&quot; +BR() +
+&quot;..........&quot;+&quot;Lead is automatically scheduled the next touchpoint – 48 hours and 7 days are the touchpoints &quot; +BR()+
+&quot;.....&quot;+&quot;Scheduled call back &quot; +BR()+
+&quot;..........&quot;+&quot;Calendar with date and time to select&quot; +BR()+
+&quot;SCHEDULED - SERVICE/APPOINTMENT&quot; +BR()+
+&quot;.....&quot;+&quot;To be discussed – once they attend appointment, are the automatically converted to “Attended” or No Show&quot; +BR() +
+&quot;.....&quot;+&quot;Notifications if No Show (consults and injectables) back to 24 hours, 48 hours, 7 days&quot; +BR() +
+&quot;NO LONGER INTERESTED – lead that retracts request &quot; +BR()+
+&quot;NOT A LEAD/INCORRECT DATA – sales/marketing call &quot; +BR()+
+&quot;CLIENT – lead that has purchased&quot; +BR()+
+&quot;MEMBER – lead that converts to membership&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Status Definitions</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

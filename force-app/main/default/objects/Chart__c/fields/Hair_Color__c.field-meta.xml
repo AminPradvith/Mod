@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Color__c</fullName>
+    <description>Hair Loss Exam</description>
+    <label>Hair Color</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hair color - black</fullName>
+                <default>false</default>
+                <label>Hair color - black</label>
+            </value>
+            <value>
+                <fullName>Hair color - brown</fullName>
+                <default>false</default>
+                <label>Hair color - brown</label>
+            </value>
+            <value>
+                <fullName>Hair color - blonde</fullName>
+                <default>false</default>
+                <label>Hair color - blonde</label>
+            </value>
+            <value>
+                <fullName>Hair color - gray</fullName>
+                <default>false</default>
+                <label>Hair color - gray</label>
+            </value>
+            <value>
+                <fullName>Hair color - white</fullName>
+                <default>false</default>
+                <label>Hair color - white</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

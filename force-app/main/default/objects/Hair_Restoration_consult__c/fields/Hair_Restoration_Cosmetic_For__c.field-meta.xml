@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Restoration_Cosmetic_For__c</fullName>
+    <label>Hair Restoration Cosmetic For</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>for filler</fullName>
+                <default>false</default>
+                <label>for filler</label>
+            </value>
+            <value>
+                <fullName>for botox/dysport</fullName>
+                <default>false</default>
+                <label>for botox/dysport</label>
+            </value>
+            <value>
+                <fullName>for peel</fullName>
+                <default>false</default>
+                <label>for peel</label>
+            </value>
+            <value>
+                <fullName>for facial</fullName>
+                <default>false</default>
+                <label>for facial</label>
+            </value>
+            <value>
+                <fullName>for kybella</fullName>
+                <default>false</default>
+                <label>for kybella</label>
+            </value>
+            <value>
+                <fullName>for IPL</fullName>
+                <default>false</default>
+                <label>for IPL</label>
+            </value>
+            <value>
+                <fullName>Trusculpt</fullName>
+                <default>false</default>
+                <label>Trusculpt</label>
+            </value>
+            <value>
+                <fullName>Emsculpt</fullName>
+                <default>false</default>
+                <label>Emsculpt</label>
+            </value>
+            <value>
+                <fullName>Vanquish</fullName>
+                <default>false</default>
+                <label>Vanquish</label>
+            </value>
+            <value>
+                <fullName>FX</fullName>
+                <default>false</default>
+                <label>FX</label>
+            </value>
+            <value>
+                <fullName>LHR</fullName>
+                <default>false</default>
+                <label>LHR</label>
+            </value>
+            <value>
+                <fullName>LVR</fullName>
+                <default>false</default>
+                <label>LVR</label>
+            </value>
+            <value>
+                <fullName>Tattoo Removal</fullName>
+                <default>false</default>
+                <label>Tattoo Removal</label>
+            </value>
+            <value>
+                <fullName>Sculptra</fullName>
+                <default>false</default>
+                <label>Sculptra</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

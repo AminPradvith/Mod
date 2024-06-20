@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Density__c</fullName>
+    <description>Hair Loss Exam</description>
+    <label>Hair Density</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hair density - balding</fullName>
+                <default>false</default>
+                <label>Hair density - balding</label>
+            </value>
+            <value>
+                <fullName>Hair density - thin</fullName>
+                <default>false</default>
+                <label>Hair density - thin</label>
+            </value>
+            <value>
+                <fullName>Hair density - average</fullName>
+                <default>false</default>
+                <label>Hair density - average</label>
+            </value>
+            <value>
+                <fullName>Hair density - thick</fullName>
+                <default>false</default>
+                <label>Hair density - thick</label>
+            </value>
+            <value>
+                <fullName>Hair density - very thick</fullName>
+                <default>false</default>
+                <label>Hair density - very thick</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

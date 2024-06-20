@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ul__c</fullName>
+    <label>Ultherapy Image Options</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1.5 mm Face</fullName>
+                <default>false</default>
+                <label>1.5 mm Face</label>
+            </value>
+            <value>
+                <fullName>3.0 mm Face</fullName>
+                <default>false</default>
+                <label>3.0 mm Face</label>
+            </value>
+            <value>
+                <fullName>4.5 mm Face</fullName>
+                <default>false</default>
+                <label>4.5 mm Face</label>
+            </value>
+            <value>
+                <fullName>3.0 mm Neck</fullName>
+                <default>false</default>
+                <label>3.0 mm Neck</label>
+            </value>
+            <value>
+                <fullName>4.5 mm Neck</fullName>
+                <default>false</default>
+                <label>4.5 mm Neck</label>
+            </value>
+            <value>
+                <fullName>3.0 mm Chest</fullName>
+                <default>false</default>
+                <label>3.0 mm Chest</label>
+            </value>
+            <value>
+                <fullName>4.5 mm Chest</fullName>
+                <default>false</default>
+                <label>4.5 mm Chest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

@@ -1,0 +1,50 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <!-- Row 1 -->
+        <div class="slds-col slds-size_1-of-1">
+            <div class="row-header">
+                <div class="slds-float_right">
+                    <lightning-icon icon-name="utility:add" alternative-text="Add" size="small" onclick={handleAddClick}></lightning-icon>
+                </div>
+            </div>
+            <div class="row-content">
+                               <c-canvas1 record-id={recordId}></c-canvas1>
+
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="slds-col slds-size_1-of-1">
+            <div class="row-content">
+                                 <c-canvas1 record-id={recordId}></c-canvas1>
+
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="slds-col slds-size_1-of-1">
+            <div class="row-content">
+                <c-canvas1 record-id={recordId}></c-canvas1>
+            </div>
+        </div>
+        <!-- Additional Rows -->
+        <template if:true={showAdditionalCanvas}>
+            <div class="slds-col slds-size_1-of-1">
+                <div class="row-content">
+                                    <c-canvas1 record-id={recordId}></c-canvas1>
+
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <div class="row-content">
+                                  <c-canvas1 record-id={recordId}></c-canvas1>
+
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <div class="row-content">
+                                   <c-canvas1 record-id={recordId}></c-canvas1>
+
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

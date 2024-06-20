@@ -1,0 +1,33 @@
+<template>
+  <div class="container">
+    <template for:each={images} for:item="image" for:index="index">
+      <div key={image.name} class="canvas-container">
+        <canvas class="image-canvas" data-index={index}></canvas>
+        <canvas class="markup-canvas" data-index={index}></canvas>
+      </div>
+    </template>
+    <div class="toolbar">
+      <button class="pen-button" onclick={toggleToolMode} data-tool="pen" title="Pen">✏️</button>
+      <button class="color-picker-button" title="color picker" onclick={openColorPicker}>
+        <span class="color-icon"></span>
+        <input type="color" class="color-picker" onchange={handleColorChange} />
+      </button>
+      <button class="eraser-button" title="Eraser" onclick={toggleToolMode} data-tool="eraser">🧽</button>
+      <button class="text-button" title="Text" onclick={toggleToolMode} data-tool="text">📝</button>
+      <button class="line-button" title="line" onclick={toggleToolMode} data-tool="line">📏</button>
+      <button class="zoom-in-button" title="Zoom-In" onclick={zoomIn}>➕</button>
+      <button class="zoom-out-button" title="Zoom-Out" onclick={zoomOut}>➖</button>
+      <button class="date-button" title="Date Stamp" onclick={toggleToolMode} data-tool="date">📅</button>
+      <div class="stamp-container">
+        <button class="number-stamp-button" title="Stamp" onclick={toggleToolMode} data-tool="numberStamp">🔢</button>
+        <select class="number-select" title="Stamp List" onchange={handleNumberChange}>
+          <option value="1">1</option>
+          <option value="2">.5</option>
+          <option value="3">.75</option>
+          <!-- Add other options as needed -->
+        </select>
+      </div>
+      <button class="save-button" onclick={saveImage}>Save Image</button>
+    </div>
+  </div>
+</template>

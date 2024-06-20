@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fractional_Laser_tip__c</fullName>
+    <label>Fractional Laser tip</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XD</fullName>
+                <default>false</default>
+                <label>XD</label>
+            </value>
+            <value>
+                <fullName>XF</fullName>
+                <default>false</default>
+                <label>XF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

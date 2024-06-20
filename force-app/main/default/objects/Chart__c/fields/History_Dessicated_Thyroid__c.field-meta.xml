@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>History_Dessicated_Thyroid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Hormone treatment history Dessicated Thyroid</description>
+    <label>History Dessicated Thyroid</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

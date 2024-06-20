@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Main Four Locations</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Main Four Locations</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Franchisee</parentRole>
+</Role>

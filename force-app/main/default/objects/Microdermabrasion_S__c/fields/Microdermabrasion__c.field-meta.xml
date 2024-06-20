@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Microdermabrasion__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Microdermabrasion</label>
+    <referenceTo>Microdermabrasion__c</referenceTo>
+    <relationshipLabel>Microdermabrasion(S)</relationshipLabel>
+    <relationshipName>Microdermabrasion_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

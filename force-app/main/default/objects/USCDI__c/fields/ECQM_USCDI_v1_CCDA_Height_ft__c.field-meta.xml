@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECQM_USCDI_v1_CCDA_Height_ft__c</fullName>
+    <externalId>false</externalId>
+    <label>ECQM~USCDI v1 CCDA Height(ft)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

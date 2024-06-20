@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_loss_findings__c</fullName>
+    <label>Hair loss findings</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>bitemporal recession of hairline</fullName>
+                <default>false</default>
+                <label>bitemporal recession of hairline</label>
+            </value>
+            <value>
+                <fullName>diffuse thinning</fullName>
+                <default>false</default>
+                <label>diffuse thinning</label>
+            </value>
+            <value>
+                <fullName>erythema</fullName>
+                <default>false</default>
+                <label>erythema</label>
+            </value>
+            <value>
+                <fullName>excoriations</fullName>
+                <default>false</default>
+                <label>excoriations</label>
+            </value>
+            <value>
+                <fullName>follicular pustules</fullName>
+                <default>false</default>
+                <label>follicular pustules</label>
+            </value>
+            <value>
+                <fullName>keloidal papules and/or plaques</fullName>
+                <default>false</default>
+                <label>keloidal papules and/or plaques</label>
+            </value>
+            <value>
+                <fullName>loss of follicles</fullName>
+                <default>false</default>
+                <label>loss of follicles</label>
+            </value>
+            <value>
+                <fullName>patchy non-scarring alopecia</fullName>
+                <default>false</default>
+                <label>patchy non-scarring alopecia</label>
+            </value>
+            <value>
+                <fullName>peri-follicular erythema</fullName>
+                <default>false</default>
+                <label>peri-follicular erythema</label>
+            </value>
+            <value>
+                <fullName>polytrichia</fullName>
+                <default>false</default>
+                <label>polytrichia</label>
+            </value>
+            <value>
+                <fullName>scale</fullName>
+                <default>false</default>
+                <label>scale</label>
+            </value>
+            <value>
+                <fullName>scarring</fullName>
+                <default>false</default>
+                <label>scarring</label>
+            </value>
+            <value>
+                <fullName>solitary bald patch with exclamation point hairs</fullName>
+                <default>false</default>
+                <label>solitary bald patch with exclamation point hairs</label>
+            </value>
+            <value>
+                <fullName>multiple bald patches with exclamation point hairs</fullName>
+                <default>false</default>
+                <label>multiple bald patches with exclamation point hairs</label>
+            </value>
+            <value>
+                <fullName>solitary bald patches with hairs of variable length</fullName>
+                <default>false</default>
+                <label>solitary bald patches with hairs of variable length</label>
+            </value>
+            <value>
+                <fullName>nodule</fullName>
+                <default>false</default>
+                <label>nodule</label>
+            </value>
+            <value>
+                <fullName>sparring of the frontal hairline</fullName>
+                <default>false</default>
+                <label>sparring of the frontal hairline</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

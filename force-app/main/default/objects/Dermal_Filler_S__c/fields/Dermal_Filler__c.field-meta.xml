@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dermal_Filler__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Dermal Filler</label>
+    <referenceTo>Dermal_Filler__c</referenceTo>
+    <relationshipLabel>Dermal Filler(S)</relationshipLabel>
+    <relationshipName>Dermal_Filler_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

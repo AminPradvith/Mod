@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Plan_1_Goal__c</fullName>
+    <description>~USCDI v1 CCDA - Care Plan Goals &amp; Instructions</description>
+    <label>Care Plan 1 Goal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Smoking Cessation</fullName>
+                <default>false</default>
+                <label>Smoking Cessation</label>
+            </value>
+            <value>
+                <fullName>Weight Loss</fullName>
+                <default>false</default>
+                <label>Weight Loss</label>
+            </value>
+            <value>
+                <fullName>Asthma Management</fullName>
+                <default>false</default>
+                <label>Asthma Management</label>
+            </value>
+            <value>
+                <fullName>Get an EKG done on 6/23/2015.</fullName>
+                <default>false</default>
+                <label>Get an EKG done on 6/23/2015.</label>
+            </value>
+            <value>
+                <fullName>Get a Chest X-ray done on 6/23/2015 showing the Lower Respiratory Tract Structure.</fullName>
+                <default>false</default>
+                <label>Get a Chest X-ray done on 6/23/2015 showing the Lower Respiratory Tract Structure.</label>
+            </value>
+            <value>
+                <fullName>Take Clindamycin 300mg three times a day as needed if pain does not subside/</fullName>
+                <default>false</default>
+                <label>Take Clindamycin 300mg three times a day as needed if pain does not subside/</label>
+            </value>
+            <value>
+                <fullName>Schedule follow on visit with Neighborhood Physicians Practice on 7/1/2015.</fullName>
+                <default>false</default>
+                <label>Schedule follow on visit with Neighborhood Physicians Practice on 7/1/2015.</label>
+            </value>
+            <value>
+                <fullName>Get rid of intermittent fever that is occurring every few weeks.</fullName>
+                <default>false</default>
+                <label>Get rid of intermittent fever that is occurring every few weeks.</label>
+            </value>
+            <value>
+                <fullName>Need to gain more energy to do regular activities</fullName>
+                <default>false</default>
+                <label>Need to gain more energy to do regular activities</label>
+            </value>
+            <value>
+                <fullName>Schedule a visit for next year.</fullName>
+                <default>false</default>
+                <label>Schedule a visit for next year.</label>
+            </value>
+            <value>
+                <fullName>Schedule after 1 week for followup</fullName>
+                <default>false</default>
+                <label>Schedule after 1 week for followup</label>
+            </value>
+            <value>
+                <fullName>Keep body temperature at 98-99F</fullName>
+                <default>false</default>
+                <label>Keep body temperature at 98-99F</label>
+            </value>
+            <value>
+                <fullName>In case of high fever, take Tylenol as needed</fullName>
+                <default>false</default>
+                <label>In case of high fever, take Tylenol as needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

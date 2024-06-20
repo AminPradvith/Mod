@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>History_Of_Botox_Restylane_Dermal_Filler__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>History Of Botox/Restylane/Dermal Filler</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

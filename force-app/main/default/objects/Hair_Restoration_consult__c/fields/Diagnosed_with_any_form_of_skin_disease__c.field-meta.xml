@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diagnosed_with_any_form_of_skin_disease__c</fullName>
+    <description>Eyebrow
+Have you ever been diagnosed with any form of skin disease, such as alopecia areata,
+alopecia barbae, alopecia totalis or psoriasis?</description>
+    <label>Diagnosed with any form of skin disease?</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

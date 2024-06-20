@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thermage_Post_Procedur_Swelling__c</fullName>
+    <label>Thermage Post Procedur Swelling</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>low</fullName>
+                <default>false</default>
+                <label>low</label>
+            </value>
+            <value>
+                <fullName>moderate</fullName>
+                <default>false</default>
+                <label>moderate</label>
+            </value>
+            <value>
+                <fullName>severe</fullName>
+                <default>false</default>
+                <label>severe</label>
+            </value>
+            <value>
+                <fullName>none</fullName>
+                <default>false</default>
+                <label>none</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

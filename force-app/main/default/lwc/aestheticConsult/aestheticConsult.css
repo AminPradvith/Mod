@@ -1,0 +1,9 @@
+.Custom-button{
+	font-size: 15px;
+    width: 100px;
+    height: 38px;
+    border-radius: 12px;
+}
+.slds-listbox__option.slds-is-selected .slds-listbox__icon-selected {
+    display: none;
+}

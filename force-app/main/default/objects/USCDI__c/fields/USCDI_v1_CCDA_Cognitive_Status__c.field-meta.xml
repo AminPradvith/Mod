@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>USCDI_v1_CCDA_Cognitive_Status__c</fullName>
+    <label>~USCDI v1 CCDA - Cognitive Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No impairment</fullName>
+                <default>false</default>
+                <label>No impairment</label>
+            </value>
+            <value>
+                <fullName>Some impairment</fullName>
+                <default>false</default>
+                <label>Some impairment</label>
+            </value>
+            <value>
+                <fullName>Detailed impairment</fullName>
+                <default>false</default>
+                <label>Detailed impairment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drug_name_and_dates_of_treatment__c</fullName>
+    <description>For Eyelash Hair Loss</description>
+    <externalId>false</externalId>
+    <label>Drug name and dates of treatment</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

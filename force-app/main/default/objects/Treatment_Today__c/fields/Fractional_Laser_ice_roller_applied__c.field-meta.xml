@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fractional_Laser_ice_roller_applied__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Fractional Laser ice roller applied</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

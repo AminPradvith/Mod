@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Restoration_Cosmetic_Interval__c</fullName>
+    <label>Hair Restoration Cosmetic Interval</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>day(s)</fullName>
+                <default>false</default>
+                <label>day(s)</label>
+            </value>
+            <value>
+                <fullName>week(s)</fullName>
+                <default>false</default>
+                <label>week(s)</label>
+            </value>
+            <value>
+                <fullName>month(s)</fullName>
+                <default>false</default>
+                <label>month(s)</label>
+            </value>
+            <value>
+                <fullName>year(s)</fullName>
+                <default>false</default>
+                <label>year(s)</label>
+            </value>
+            <value>
+                <fullName>as needed</fullName>
+                <default>false</default>
+                <label>as needed</label>
+            </value>
+            <value>
+                <fullName>PRN</fullName>
+                <default>false</default>
+                <label>PRN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

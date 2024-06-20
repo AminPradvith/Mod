@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Nashua NH</name>
+    <queueMembers>
+        <users>
+            <user>adam@empower-medspa.com</user>
+            <user>al.romani@couturemedspa.com</user>
+            <user>ashley@couturemedspa.com</user>
+            <user>august.jekyll@couturemedspa.com</user>
+            <user>brandon.jenkins@couturemedspa.com</user>
+            <user>cassidy@empower-medspa.com</user>
+            <user>charlotte@empower-medspa.com</user>
+            <user>chloe.dristilaris@empower-medspa.com</user>
+            <user>diane@couturemedspa.com</user>
+            <user>eric@couturemedspa.com</user>
+            <user>jamie.windham@cms-franchise.com</user>
+            <user>joe@couturemedspa.com</user>
+            <user>nicole.osadolor@couturemedspa.com</user>
+            <user>nicole.osadolor@couturemedspa.com</user>
+            <user>raquel.martinez@couturemedspa.com</user>
+            <user>ryan@couturemedspa.com</user>
+            <user>tara.gillin@cms-franchise.com</user>
+            <user>sfdc+couturemedspa@growwithimg.com</user>
+            <user>todd.chase@cms-franchise.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

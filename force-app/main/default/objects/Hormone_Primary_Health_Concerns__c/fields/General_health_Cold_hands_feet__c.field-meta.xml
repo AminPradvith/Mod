@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_health_Cold_hands_feet__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>General health Cold hands/feet</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

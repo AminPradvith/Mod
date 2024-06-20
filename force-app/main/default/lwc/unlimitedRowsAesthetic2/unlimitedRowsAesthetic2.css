@@ -1,0 +1,99 @@
+/* For the table */
+.slds-table {
+    width: 100%;
+}
+ 
+/* For the table header */
+.slds-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f4f6f9;
+    z-index: 1;
+}
+ 
+/* Picklist container */
+.picklist-container {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-color: white;
+    width: calc(100% - 1.5rem); /* Adjusted width to match the input field */
+    max-height: 100px;
+    overflow-y: auto;
+}
+ 
+.picklist-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #d8dde6;
+    transition: background-color 0.3s ease;
+}
+ 
+.picklist-item:last-child {
+    border-bottom: none;
+}
+ 
+.picklist-item:hover {
+    background-color: #f3f2f2;
+}
+ 
+.picklist-item.selected {
+    background-color: #0070d2;
+    color: white;
+}
+ 
+/* For the input fields */
+lightning-input {
+    width: 15rem;
+    color: black;
+    position: sticky;
+}
+ 
+.slds-modal__footer {
+    display: flex;
+    justify-content: flex-end; /* Align button to the end (right) of the container */
+    padding: 1rem; /* Add some padding for spacing */
+}
+ 
+ 
+ 
+ 
+.slds-pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+}
+ 
+.slds-pill {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100px; /* Limit the width of pill text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis for overflowing text */
+    margin-right: 0.25rem; /* Add space between pills */
+    margin-bottom: 0.25rem; /* Add space between rows of pills */
+    font-size: 0.8rem; /* Reduce the font size of pill text */
+}
+ 
+.slds-pill__label {
+    padding: 0 0.5rem; /* Adjust padding for better spacing */
+}
+ 
+.slds-pill__remove {
+    margin-left: 0.25rem;
+    padding: 0.1rem; /* Adjust the padding for the remove button */
+}
+ 
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+}
+ 
+    .highlight {
+        background-color: #daf605; /* or any other highlight color */
+    }

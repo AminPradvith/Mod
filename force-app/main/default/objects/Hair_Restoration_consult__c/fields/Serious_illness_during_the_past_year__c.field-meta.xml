@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Serious_illness_during_the_past_year__c</fullName>
+    <description>EyeBrow Hair Loss Questionnaire</description>
+    <externalId>false</externalId>
+    <label>Serious illness during the past year?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

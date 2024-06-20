@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cosmetic_consult__c</fullName>
+    <label>Cosmetic consult</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aesthetic consult</fullName>
+                <default>false</default>
+                <label>Esthetic consult</label>
+            </value>
+            <value>
+                <fullName>Coolsculpting consult</fullName>
+                <default>false</default>
+                <label>Coolsculpting consult</label>
+            </value>
+            <value>
+                <fullName>Hair Restoration consult</fullName>
+                <default>false</default>
+                <label>Hair Restoration consult</label>
+            </value>
+            <value>
+                <fullName>Hormone therapy consult</fullName>
+                <default>false</default>
+                <label>Hormone therapy consult</label>
+            </value>
+            <value>
+                <fullName>Tattoo removal consult</fullName>
+                <default>false</default>
+                <label>Tattoo removal consult</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

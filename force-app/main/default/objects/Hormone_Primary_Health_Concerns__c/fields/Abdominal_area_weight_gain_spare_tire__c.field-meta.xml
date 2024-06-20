@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abdominal_area_weight_gain_spare_tire__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Abdominal area weight gain &quot;spare tire&quot;</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

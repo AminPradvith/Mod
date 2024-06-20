@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laser_Vein_Removal_lux_lotion_applied__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Laser Vein Removal lux lotion applied</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

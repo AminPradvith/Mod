@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Peel_type__c</fullName>
+    <label>Peel type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Glycolic Peel</fullName>
+                <default>false</default>
+                <label>Glycolic Peel</label>
+            </value>
+            <value>
+                <fullName>Jessners Peel</fullName>
+                <default>false</default>
+                <label>Jessners Peel</label>
+            </value>
+            <value>
+                <fullName>Lactic / Phenol Peel</fullName>
+                <default>false</default>
+                <label>Lactic / Phenol Peel</label>
+            </value>
+            <value>
+                <fullName>Salicylic Peel</fullName>
+                <default>false</default>
+                <label>Salicylic Peel</label>
+            </value>
+            <value>
+                <fullName>TCA Chemical Peel</fullName>
+                <default>false</default>
+                <label>TCA Chemical Peel</label>
+            </value>
+            <value>
+                <fullName>TCA Combo Peel</fullName>
+                <default>false</default>
+                <label>TCA Combo Peel</label>
+            </value>
+            <value>
+                <fullName>Vitalize Peel</fullName>
+                <default>false</default>
+                <label>Vitalize Peel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

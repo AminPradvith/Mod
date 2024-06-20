@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laser_Hair_Removal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Laser Hair Removal</label>
+    <referenceTo>Laser_Hair_Removal__c</referenceTo>
+    <relationshipLabel>Laser Hair Removal(S)</relationshipLabel>
+    <relationshipName>Laser_Hair_Removal_S</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

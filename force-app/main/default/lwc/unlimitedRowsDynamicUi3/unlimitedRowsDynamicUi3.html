@@ -1,0 +1,796 @@
+<template>
+    <c-custom-toast></c-custom-toast>
+    <div class="slds-card" style="font-family: 'Open Sans', sans-serif">
+        <div class="slds-scrollable" style="height:auto;width:auto;overflow-y:hidden" tabindex="0">
+
+            <div if:true={FractionalLaserTable}>
+                <div class="slds-card__header slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:account" size="large"></lightning-icon>
+                    </div>
+
+                    <div class="slds-media__body slds-card__header-title slds-text-title_bold"
+                        style="font-size: 22px;font-weight:bold">
+                        Fractional Laser
+                    </div>
+                </div>
+                <table class="slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 3rem;">Sr.</th>
+                            <th scope="col">Tx#</th>
+                            <th scope="col">Area</th>
+                            <th scope="col">Tip</th>
+                            <th scope="col"> Joules</th>
+                            <th scope="col">Pulses/ms</th>
+                            <th scope="col">Ice Roller Applied</th>
+                            <th scope="col"> HA Serum Applied</th>
+                            <th scope="col"> Notes</th>
+                            <th scope="col"> Passes Completed</th>
+                            <th scope="col" style="width: 3rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={listOfRecommendations} for:item="rec">
+                            <tr key={rec.index} class="slds-hint-parent">
+                                <td style="font-weight: bold;">
+                                    <lightning-formatted-number value={rec.index}></lightning-formatted-number>.
+                                </td>
+                                
+                                <td>
+                                    <div class="FractionalTx-dropdown">
+                                        <lightning-input name="Fractional_Laser_Tx__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_Tx__c}
+                                            onchange={handleInputFractionalTx}></lightning-input>
+                                    </div>
+                                </td> 
+
+                                <td>
+                                    <div class="FractionalLaserArea-dropdown">
+                                        <lightning-input name="Fractional_Laser_area__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_area__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_area__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_area__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_area__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={FractionalAreaSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_area__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={FractionalAreaPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                    <td>
+                                        <div class="FractionalLaserTip-dropdown">
+                                            <lightning-input name="Fractional_Laser_tip__c"
+                                                data-id={rec.index} variant="label-hidden"
+                                                value={rec.Fractional_Laser_tip__cValues}
+                                                onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                            <template if:true={rec.Fractional_Laser_tip__c}>
+                                                <div class="picklist-container">
+                                                    <template for:each={Fractional_Laser_tip__cValues}
+                                                        for:item="MembershipVal">
+                                                        <div class="picklist-item"
+                                                            name="Fractional_Laser_tip__cValues"
+                                                            data-id={rec.index} key={MembershipVal}
+                                                            onclick={FractionalTip}
+                                                            value={MembershipVal}>
+                                                            {MembershipVal}</div>
+                                                    </template>
+                                                </div>
+                                            </template>
+                                            <div class="pill-container">
+                                                <template for:each={rec.Fractional_Laser_tip__cValuesList}
+                                                    for:item="MembershipVal">
+                                                    <div key={MembershipVal} class="slds-pill">
+                                                        <span class="slds-pill__label">{MembershipVal}</span>
+                                                        <button class="slds-button slds-button_icon slds-pill__remove"
+                                                            name={MembershipVal} data-id={rec.index} title="Remove"
+                                                            onclick={handleRemoveFractionalTip}>
+                                                            <lightning-icon icon-name="utility:close"
+                                                                alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                        </button>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    
+
+                                <td>
+                                    <div class="FractionalJoules-dropdown">
+                                        <lightning-input name="Fractional_Laser_joules__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_joules__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_joules__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_joules__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_joules__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleFractionalJoules}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_joules__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveFractionalJoulesPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="FractionalPulse-dropdown">
+                                        <lightning-input name="Fractional_Laser_pulses_ms__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_pulses_ms__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_pulses_ms__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_pulses_ms__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_pulses_ms__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleFractionalPulse}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_pulses_ms__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={FractionalPulsePill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="FractionalIceRoller-dropdown">
+                                        <lightning-input name="Fractional_Laser_ice_roller_applied__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_ice_roller_applied__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_ice_roller_applied__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_ice_roller_applied__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_ice_roller_applied__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={FractionalIceRollerSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_ice_roller_applied__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={FractionalIceRollerPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="FractionalHASerum-dropdown">
+                                        <lightning-input name="Fractional_Laser_HA_serum_applied__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_HA_serum_applied__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_HA_serum_applied__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_HA_serum_applied__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_HA_serum_applied__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleSelectHASerumSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_HA_serum_applied__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleSelectHASerumpILL}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="FractionalNotes-dropdown">
+                                        <lightning-input name="Fractional_Laser_notes__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_notes__c}
+                                            onchange={handleInputFractionalNotes}></lightning-input>
+                                    </div>
+                                </td> 
+
+                                <td>
+                                    <div class="FractionalPasses-dropdown">
+                                        <lightning-input name="Fractional_Laser_passes_completed__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Fractional_Laser_passes_completed__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Fractional_Laser_passes_completed__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Fractional_Laser_passes_completed__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Fractional_Laser_passes_completed__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleSelectPasses}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Fractional_Laser_passes_completed__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemovePillPasses}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <lightning-button-icon icon-name="utility:delete" alternative-text="Remove"
+                                        title="Remove" name={rec.index} onclick={removeRow}></lightning-button-icon>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div if:true={HydrafacialTable}>
+                <div class="slds-card__header slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:account" size="large"></lightning-icon>
+                    </div>
+
+                    <div class="slds-media__body slds-card__header-title slds-text-title_bold"
+                        style="font-size: 22px;font-weight:bold">
+                        Hydrafacial
+                    </div>
+                </div>
+                <table class="slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 3rem;">Sr.</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Cleanser</th>
+                            <th scope="col">Peel</th>
+                            <th scope="col">Extractions</th>
+                            <th scope="col">Serum</th>
+                            <th scope="col">Booster</th>
+                            <th scope="col">Moisturizer</th>
+                            <th scope="col">Notes</th>
+                            <th scope="col" style="width: 3rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={listOfRecommendations} for:item="rec">
+                            <tr key={rec.index} class="slds-hint-parent">
+                                <td style="font-weight: bold;">
+                                    <lightning-formatted-number value={rec.index}></lightning-formatted-number>.
+                                </td>
+                                <td>
+                                    <div class="HydrafacialLocation-dropdown">
+                                        <lightning-input name="Hydrafacial_Location__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Hydrafacial_Location__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Hydrafacial_Location__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Hydrafacial_Location__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item"
+                                                        name="Hydrafacial_Location__cValues" data-id={rec.index}
+                                                        key={MembershipVal}
+                                                        onclick={HydrafacialLocationSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Hydrafacial_Location__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={HydrafacialLocationPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="HydrafacialCleanserdropdown">
+                                        <lightning-input name="Hydrafacial_Cleanser__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Cleanser__c}
+                                            onchange={handletHydrafacialcleanserSelect}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="HydrafacialPeeldropdown">
+                                        <lightning-input name="Hydrafacial_Peel__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Peel__c}
+                                            onchange={handletHydrafacialPeelSelect}></lightning-input>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="Extraction-dropdown">
+                                        <lightning-input type="checkbox" value={rec.Hydrafacial_Extractions__c} name="Hydrafacial_Extractions__c" 
+                                        onchange={changehydrafacialExtractionHandler} data-id={rec.index} checked={rec.Hydrafacial_Extractions__c}>
+                                        </lightning-input>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <div class="HydrafacialSerumdropdown">
+                                        <lightning-input name="Hydrafacial_Serum__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Serum__c}
+                                            onchange={handletHydrafacialSerumSelect}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="HydrafacialBoosterdropdown">
+                                        <lightning-input name="Hydrafacial_Booster__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Booster__c}
+                                            onchange={handletHydrafacialBoosterSelect}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="HydrafacialMoisturizerdropdown">
+                                        <lightning-input name="Hydrafacial_Moisturizer__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Moisturizer__c}
+                                            onchange={handletHydrafacialMoisturizerSelect}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="HydrafacialNotesdropdown">
+                                        <lightning-input name="Hydrafacial_Notes__c"
+                                            data-id={rec.index} variant="label-hidden"
+                                            value={rec.Hydrafacial_Notes__c}
+                                            onchange={handletHydrafacialNotesSelect}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <lightning-button-icon icon-name="utility:delete" alternative-text="Remove"
+                                        title="Remove" name={rec.index} onclick={removeRow}></lightning-button-icon>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <div if:true={IPLTable}>
+                <div class="slds-card__header slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:account" size="large"></lightning-icon>
+                    </div>
+
+                    <div class="slds-media__body slds-card__header-title slds-text-title_bold"
+                        style="font-size: 22px;font-weight:bold">
+                        IPL
+                    </div>
+                </div>
+                <table class="slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 3rem;">Sr.</th>
+                            <th scope="col">TX#</th>
+                            <th scope="col">Area</th>
+                            <th scope="col">Handpiece</th>
+                            <th scope="col">SkinTel #</th>
+                            <th scope="col">BaseLine SkinTel</th>
+                            <th scope="col">Joules</th>
+                            <th scope="col">Pulse Width</th>
+                            <th scope="col">Last SkinTel</th>
+                            <th scope="col">Notes</th>
+                            <th scope="col">Sunscreen Applied</th>
+                            <th scope="col" style="width: 3rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={listOfRecommendations} for:item="rec">
+                            <tr key={rec.index} class="slds-hint-parent">
+                                <td style="font-weight: bold;">
+                                    <lightning-formatted-number value={rec.index}></lightning-formatted-number>.
+                                </td>
+
+
+                                <td>
+                                    <div class="Tx-dropdown">
+                                        <lightning-input name="IPL_Tx__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.IPL_Tx__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.IPL_Tx__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={IPL_Tx__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item" name="IPL_Tx__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleIPLTxSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.IPL_Tx__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveIPLTXPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="IPLArea-dropdown">
+                                        <lightning-input name="Area__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Area__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Area__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Area__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item" name="Area__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleIPLAreaSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Area__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveIPLAreaPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="IPLHandpiece-dropdown">
+                                        <lightning-input name="Handpiece__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Handpiece__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Handpiece__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Handpiece__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item" name="Handpiece__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleIPLHandPieceSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Handpiece__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveIPLHandPiecePill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+
+
+                                <td>
+                                    <div class="SkinTel-dropdown">
+                                        <lightning-input name="	IPL_skinTel__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.IPL_skinTel__c}
+                                            onchange={handleInputSkenTel}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="BaseSkinTel-dropdown">
+                                        <lightning-input name="Baseline_Skintel__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Baseline_Skintel__c}
+                                            onchange={handleInputSkinTel}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="Joules-dropdown">
+                                        <lightning-input name="Joules__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Joules__c}
+                                            onchange={handleInputIPLJOules}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="PulseWidth-dropdown">
+                                        <lightning-input name="Pulse_width__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Pulse_width__c}
+                                            onchange={handleInputPulseWidth}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="LastSkintel-dropdown">
+                                        <lightning-input name="Last_skintel__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Last_skintel__c}
+                                            onchange={handleInputLastSkinTel}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="IPLNotes-dropdown">
+                                        <lightning-input name="Notes__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Notes__c}
+                                            onchange={handleInputIPLNotes}></lightning-input>
+                                    </div>
+                                </td>
+
+
+                                <td>
+                                    <div class="IPLSunscreen-dropdown">
+                                        <lightning-input name="Sunscreen_applied__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Sunscreen_applied__cValues}
+                                            onclick={handleInputClick} onkeydown={handleKeydown}></lightning-input>
+                                        <template if:true={rec.Sunscreen_applied__c}>
+                                            <div class="picklist-container">
+                                                <template for:each={Sunscreen_applied__cValues}
+                                                    for:item="MembershipVal">
+                                                    <div class="picklist-item" name="Sunscreen_applied__cValues"
+                                                        data-id={rec.index} key={MembershipVal}
+                                                        onclick={handleIPLSunscreenSelect}
+                                                        value={MembershipVal}>
+                                                        {MembershipVal}</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <div class="pill-container">
+                                            <template for:each={rec.Sunscreen_applied__cValuesList}
+                                                for:item="MembershipVal">
+                                                <div key={MembershipVal} class="slds-pill">
+                                                    <span class="slds-pill__label">{MembershipVal}</span>
+                                                    <button class="slds-button slds-button_icon slds-pill__remove"
+                                                        name={MembershipVal} data-id={rec.index} title="Remove"
+                                                        onclick={handleRemoveIPLSunscreenPill}>
+                                                        <lightning-icon icon-name="utility:close"
+                                                            alternative-text="Remove" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <lightning-button-icon icon-name="utility:delete" alternative-text="Remove"
+                                        title="Remove" name={rec.index} onclick={removeRow}></lightning-button-icon>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div if:true={KybellaTable}>
+                <div class="slds-card__header slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:account" size="large"></lightning-icon>
+                    </div>
+
+                    <div class="slds-media__body slds-card__header-title slds-text-title_bold"
+                        style="font-size: 22px;font-weight:bold">
+                        Kybella
+                    </div>
+                </div>
+                <table class="slds-table slds-table_bordered slds-no-row-hover slds-table_cell-buffer">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 3rem;">Sr.</th>
+                            <th scope="col">Number Of Injections</th>
+                            <th scope="col">Total Dosage</th>
+                            <th scope="col">Expiration Number</th>
+                            <th scope="col">Lot Number</th>
+                            <th scope="col">Notes</th>
+                            <th scope="col" style="width: 3rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={listOfRecommendations} for:item="rec">
+                            <tr key={rec.index} class="slds-hint-parent">
+                                <td style="font-weight: bold;">
+                                    <lightning-formatted-number value={rec.index}></lightning-formatted-number>.
+                                </td>
+
+                                <td>
+                                    <div class="Injection-dropdown">
+                                        <lightning-input name="Number_Of_Injections__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Number_Of_Injections__c}
+                                            onchange={handleInputkybellaInjection}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="Dosage-dropdown">
+                                        <lightning-input name="Total_dosage__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Total_dosage__c}
+                                            onchange={handleInputkybellaDosages}></lightning-input>
+                                    </div>
+                                </td>
+
+
+                                <td>
+                                    <div class="Expiration-dropdown">
+                                        <lightning-input name="Expiration_number__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Expiration_number__c}
+                                            onchange={handleInputkybellaExpiration}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="LotNumber-dropdown">
+                                        <lightning-input name="Lot_number__c	" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Lot_number__c}
+                                            onchange={handleInputkybellaLotNumber}></lightning-input>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="Notes-dropdown">
+                                        <lightning-input name="Notes__c" data-id={rec.index}
+                                            variant="label-hidden" value={rec.Notes__c}
+                                            onchange={handleInputkybellaNote}></lightning-input>
+                                    </div>
+                                </td>
+                               
+                                <td>
+                                    <lightning-button-icon icon-name="utility:delete" alternative-text="Remove"
+                                        title="Remove" name={rec.index} onclick={removeRow}></lightning-button-icon>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="slds-p-left_small slds-p-vertical_small">
+                <button class="slds-button slds-button_neutral slds-button_success" style="margin-left: 1rem;"
+                    onclick={addNewRow}>Add Rows</button>
+            </div>
+        </div>
+        <lightning-modal-footer class="my-modal-footer">
+            <button class="slds-button slds-button_brand" disabled={isSaveDisabled} onclick={createRecommendations}>Save</button>
+        </lightning-modal-footer>
+    </div>
+</template>

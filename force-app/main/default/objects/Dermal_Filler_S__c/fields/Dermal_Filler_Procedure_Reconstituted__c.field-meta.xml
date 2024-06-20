@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dermal_Filler_Procedure_Reconstituted__c</fullName>
+    <label>Dermal Filler Procedure Reconstituted</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2.2ml</fullName>
+                <default>false</default>
+                <label>2.2ml</label>
+            </value>
+            <value>
+                <fullName>1.1ml</fullName>
+                <default>false</default>
+                <label>1.1ml</label>
+            </value>
+            <value>
+                <fullName>6 ml BSW and 2ml 2% lido</fullName>
+                <default>false</default>
+                <label>6 ml BSW and 2ml 2% lido</label>
+            </value>
+            <value>
+                <fullName>14ml BSW and 2ml 2% lido</fullName>
+                <default>false</default>
+                <label>14ml BSW and 2ml 2% lido</label>
+            </value>
+            <value>
+                <fullName>2.5ml</fullName>
+                <default>false</default>
+                <label>2.5ml</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

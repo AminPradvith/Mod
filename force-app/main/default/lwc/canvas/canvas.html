@@ -1,0 +1,65 @@
+<template>
+
+  <div class="container">
+    <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+    <div class="canvas-container">
+      <canvas class="image-canvas"></canvas>
+      <canvas class="markup-canvas"></canvas>
+    </div>
+    <div class="toolbar">
+      <button class="pen-button" onclick={toggleToolMode} data-tool="pen" title="Pen">✏️</button>
+      <button class="color-picker-button" title="color picker" onclick={openColorPicker}>
+        <span class="color-icon"></span> <!-- Icon for the color picker -->
+        <input type="color" class="color-picker" onchange={handleColorChange} />
+      </button>
+      <button class="eraser-button" title="Eraser" onclick={toggleToolMode} data-tool="eraser">🧽</button>
+      <button class="text-button" title="Text" onclick={toggleToolMode} data-tool="text">📝</button>
+      <button class="line-button" title="line" onclick={toggleToolMode} data-tool="line">📏</button>
+      <button class="zoom-in-button" title="Zoom-In" onclick={zoomIn}>➕</button>
+      <button class="zoom-out-button" title="Zoom-Out" onclick={zoomOut}>➖</button>
+     
+      <button class="date-button" title="Date Stamp" onclick={toggleToolMode} data-tool="date">📅</button>
+       <div class="stamp-container">
+      <button class="number-stamp-button" title="Stamp" onclick={toggleToolMode} data-tool="numberStamp">🔢</button>
+      <select class="number-select" title="Stamp List" onchange={handleNumberChange} >
+         <option value="•1">1</option>
+        <option value="•2">.5</option>
+        <option value="•3">.75</option>
+        
+          <option value="•25">.25</option>
+           
+          
+            <option value="•1.0">1.0</option>
+            <option value="•1.25">1.25</option>
+            <option value="•1.5">1.5</option>
+            <option value="•2">2</option>
+            <option value="•5">5</option>
+            <option value="•6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+             <option value="•B">Botox</option>
+            <option value="•D">Dysport</option>
+            <option value="•Defyne">Defyne</option>
+            <option value="•juvU">juvU (Juvederm Ultra)</option>
+            <option value="•juvUP">juvUP (Juvederm Ultra Plus)</option>
+            <option value="•kybella">kybella</option>
+            <option value="•Kysse">Kysse</option>
+              <option value="•R Contour">R Contour</option>
+              <option value="•Resty">Resty</option>
+              <option value="•Rlyft">Rlyft (Restylane Lyft)</option>
+              <option value="•Sculptra">Sculptra</option>
+              <option value="•Silk">Silk</option>
+              <option value="•kinvive">Skinvive</option>
+                   <option value="•VBella">VBella (Volbella)</option>
+                        <option value="•Vluma">Vluma (Voluma)</option>
+                             <option value="•Vlure">Vlure (Vollure)</option>
+                              <option value="•Volux">Volux</option>
+
+      </select>
+     </div>
+      <button class="save-button" onclick={saveImage} disabled={saveDisabled} >Save Image</button>
+    </div>
+  </div>
+</template>

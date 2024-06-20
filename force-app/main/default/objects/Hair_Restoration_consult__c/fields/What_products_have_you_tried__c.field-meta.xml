@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_products_have_you_tried__c</fullName>
+    <description>What products have you tried to help grow or thicken your facial hair?</description>
+    <externalId>false</externalId>
+    <label>What products have you tried?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

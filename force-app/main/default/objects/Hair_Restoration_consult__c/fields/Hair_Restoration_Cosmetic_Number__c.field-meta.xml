@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hair_Restoration_Cosmetic_Number__c</fullName>
+    <label>Hair Restoration Cosmetic Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>in 1</fullName>
+                <default>false</default>
+                <label>in 1</label>
+            </value>
+            <value>
+                <fullName>in 2</fullName>
+                <default>false</default>
+                <label>in 2</label>
+            </value>
+            <value>
+                <fullName>in 3</fullName>
+                <default>false</default>
+                <label>in 3</label>
+            </value>
+            <value>
+                <fullName>in 4</fullName>
+                <default>false</default>
+                <label>in 4</label>
+            </value>
+            <value>
+                <fullName>in 5</fullName>
+                <default>false</default>
+                <label>in 5</label>
+            </value>
+            <value>
+                <fullName>in 6</fullName>
+                <default>false</default>
+                <label>in 6</label>
+            </value>
+            <value>
+                <fullName>in 7</fullName>
+                <default>false</default>
+                <label>in 7</label>
+            </value>
+            <value>
+                <fullName>in 8</fullName>
+                <default>false</default>
+                <label>in 8</label>
+            </value>
+            <value>
+                <fullName>in 9</fullName>
+                <default>false</default>
+                <label>in 9</label>
+            </value>
+            <value>
+                <fullName>in 10</fullName>
+                <default>false</default>
+                <label>in 10</label>
+            </value>
+            <value>
+                <fullName>in 11</fullName>
+                <default>false</default>
+                <label>in 11</label>
+            </value>
+            <value>
+                <fullName>in 12</fullName>
+                <default>false</default>
+                <label>in 12</label>
+            </value>
+            <value>
+                <fullName>in 1-2</fullName>
+                <default>false</default>
+                <label>in 1-2</label>
+            </value>
+            <value>
+                <fullName>in 2-3</fullName>
+                <default>false</default>
+                <label>in 2-3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

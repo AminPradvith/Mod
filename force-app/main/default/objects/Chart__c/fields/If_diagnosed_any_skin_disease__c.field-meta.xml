@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_diagnosed_any_skin_disease__c</fullName>
+    <description>such  alopecia areata,alopecia totalis,psoriasis</description>
+    <externalId>false</externalId>
+    <label>If diagnosed any skin disease</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

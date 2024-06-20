@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>History_Of_Permanent_Make_up__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>History Of Permanent Make-up</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

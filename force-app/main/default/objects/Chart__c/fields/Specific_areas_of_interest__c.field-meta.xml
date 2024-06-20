@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specific_areas_of_interest__c</fullName>
+    <description>Hair restoration HPI
+Please identify any specific areas of interest (check all that apply)</description>
+    <label>Specific areas of interest</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hair care products</fullName>
+                <default>false</default>
+                <label>Hair care products</label>
+            </value>
+            <value>
+                <fullName>Formula 82M</fullName>
+                <default>false</default>
+                <label>Formula 82M</label>
+            </value>
+            <value>
+                <fullName>Low-level laser therapy</fullName>
+                <default>false</default>
+                <label>Low-level laser therapy</label>
+            </value>
+            <value>
+                <fullName>PRP with ECM Therapy</fullName>
+                <default>false</default>
+                <label>PRP with ECM Therapy</label>
+            </value>
+            <value>
+                <fullName>Hair transplantation</fullName>
+                <default>false</default>
+                <label>Hair transplantation</label>
+            </value>
+            <value>
+                <fullName>Unsure</fullName>
+                <default>false</default>
+                <label>Unsure</label>
+            </value>
+            <value>
+                <fullName>Formula 82F</fullName>
+                <default>false</default>
+                <label>Formula 82F</label>
+            </value>
+            <value>
+                <fullName>Scalp micropigmentation (SMP)</fullName>
+                <default>false</default>
+                <label>Scalp micropigmentation (SMP)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

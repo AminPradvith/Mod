@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gender__c</fullName>
+    <label>Gender</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Male</fullName>
+                <default>false</default>
+                <label>Male</label>
+            </value>
+            <value>
+                <fullName>Female</fullName>
+                <default>false</default>
+                <label>Female</label>
+            </value>
+            <value>
+                <fullName>Nonbinary</fullName>
+                <default>false</default>
+                <label>Nonbinary</label>
+            </value>
+            <value>
+                <fullName>Prefer to Self-Describe</fullName>
+                <default>false</default>
+                <label>Prefer to Self-Describe</label>
+            </value>
+            <value>
+                <fullName>Decline to State</fullName>
+                <default>false</default>
+                <label>Decline to State</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

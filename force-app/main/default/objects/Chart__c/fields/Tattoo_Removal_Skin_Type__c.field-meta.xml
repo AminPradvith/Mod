@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tattoo_Removal_Skin_Type__c</fullName>
+    <label>Tattoo Removal Skin Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 point for skin type I - Always Burn, never tan.</fullName>
+                <default>false</default>
+                <label>1 point for skin type I - Always Burn, never tan.</label>
+            </value>
+            <value>
+                <fullName>2 points for skin type II - Usuallt Bun, tan less than about average.</fullName>
+                <default>false</default>
+                <label>2 points for skin type II - Usuallt Bun, tan less than about average.</label>
+            </value>
+            <value>
+                <fullName>3 points for skin type III - Sometimes burns, gradually tans about average.</fullName>
+                <default>false</default>
+                <label>3 points for skin type III - Sometimes burns, gradually tans about average.</label>
+            </value>
+            <value>
+                <fullName>4 points for skin type IV - Sometimes burns, tans (light brown or olive skin).</fullName>
+                <default>false</default>
+                <label>4 points for skin type IV - Sometimes burns, tans (light brown or olive skin).</label>
+            </value>
+            <value>
+                <fullName>5 points for skin type V - Rarely burns, tans always.</fullName>
+                <default>false</default>
+                <label>5 points for skin type V - Rarely burns, tans always.</label>
+            </value>
+            <value>
+                <fullName>6 points for skin type VI - Deeply pigmented, never burns.</fullName>
+                <default>false</default>
+                <label>6 points for skin type VI - Deeply pigmented, never burns.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

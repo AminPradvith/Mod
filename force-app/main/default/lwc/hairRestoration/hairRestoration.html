@@ -1,0 +1,68 @@
+<template>
+    <!-- LOADER -->
+    <template lwc:if={isLoading}>
+        <lightning-spinner variant="brand" size="large"></lightning-spinner>
+    </template>
+    <!-- HEADER -->
+    <div class="slds-modal__header slds-text-heading_large">
+        Add Multiple Hair Restoration Consults
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>FUT vs FUE</td>
+                    <td>No. of Grafts</td>
+                    <td>Year</td>
+                    <td>Surgeon</td>
+                    <td>
+                        <lightning-button-icon icon-name="utility:add" title="Add New Consult"
+                            class="slds-m-left_xx-small" onclick={addNewClickHandler}></lightning-button-icon>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={consults} for:item="consult">
+                    <tr key={consult.tempId}>
+                        <td>
+                            <lightning-input label="Date" variant="label-hidden" data-temp-id={consult.tempId}
+                                name="HPI_Date__c" placeholder="Enter Date" value = {consult}
+                                onblur={elementChangeHandler}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input label="FUT vs FUE" variant="label-hidden" name="HPI_FUT_vs_FUE__c"
+                                data-temp-id={consult.tempId} placeholder="Enter FUT vs FUE"
+                                onblur={elementChangeHandler}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input label="No. of Grafts" variant="label-hidden" name="HPI_No_of_Grafts__c"
+                                data-temp-id={consult.tempId} placeholder="Enter No. of Grafts"
+                                onblur={elementChangeHandler}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input label="Year" variant="label-hidden" name="HPI_Year__c"
+                                data-temp-id={consult.tempId} placeholder="Enter Year"
+                                onblur={elementChangeHandler}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input label="Surgeon" variant="label-hidden" name="HPI_Surgeon__c"
+                                data-temp-id={consult.tempId} placeholder="Enter Surgeon"
+                                onblur={elementChangeHandler}></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-button-icon icon-name="utility:delete" title="Delete Consult"
+                                class="slds-m-left_xx-small" onclick={deleteClickHandler}
+                                data-temp-id={consult.tempId}>
+                                </lightning-button-icon>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    <!-- FOOTER -->
+    <div class="slds-modal__footer slds-text-align_right">
+        <lightning-button label="Submit" variant="brand" onclick={submitClickHandler}></lightning-button>
+    </div>
+</template>

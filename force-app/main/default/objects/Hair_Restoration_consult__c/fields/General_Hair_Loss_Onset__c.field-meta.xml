@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Hair_Loss_Onset__c</fullName>
+    <label>General Hair Loss Onset</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>since age 15-19</fullName>
+                <default>false</default>
+                <label>since age 15-19</label>
+            </value>
+            <value>
+                <fullName>since age 20-24</fullName>
+                <default>false</default>
+                <label>since age 20-24</label>
+            </value>
+            <value>
+                <fullName>since age 25-29</fullName>
+                <default>false</default>
+                <label>since age 25-29</label>
+            </value>
+            <value>
+                <fullName>since age 30-34</fullName>
+                <default>false</default>
+                <label>since age 30-34</label>
+            </value>
+            <value>
+                <fullName>since age 35-39</fullName>
+                <default>false</default>
+                <label>since age 35-39</label>
+            </value>
+            <value>
+                <fullName>since age 40 +</fullName>
+                <default>false</default>
+                <label>since age 40 +</label>
+            </value>
+            <value>
+                <fullName>since age 50 +</fullName>
+                <default>false</default>
+                <label>since age 50 +</label>
+            </value>
+            <value>
+                <fullName>since age 60 +(Patient Unsure) within the last 6 months within the last year within the last several years</fullName>
+                <default>false</default>
+                <label>since age 60 +(Patient Unsure) within the last 6 months within the last year within the last several years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

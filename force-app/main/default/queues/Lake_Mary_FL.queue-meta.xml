@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Lake Mary FL</name>
+    <queueMembers>
+        <users>
+            <user>angelika.tarver@couturemedspa.com</user>
+            <user>al.romani@couturemedspa.com</user>
+            <user>arianna.atkins@couturemedspa.com</user>
+            <user>ashley@couturemedspa.com</user>
+            <user>august.jekyll@couturemedspa.com</user>
+            <user>brandon.jenkins@couturemedspa.com</user>
+            <user>candace.kettlehut@couturemedspa.com</user>
+            <user>candice.defoor@couturemedspa.com</user>
+            <user>diane@couturemedspa.com</user>
+            <user>dulce.madrigal@couturemedspa.com</user>
+            <user>eric@couturemedspa.com</user>
+            <user>hayley.rogalski@couturemedspa.com</user>
+            <user>kassidy.morales@couturemedspa.com</user>
+            <user>kiley.cleavenger@couturemedspa.com</user>
+            <user>nicole.osadolor@couturemedspa.com</user>
+            <user>nicole.osadolor@couturemedspa.com</user>
+            <user>raquel.martinez@couturemedspa.com</user>
+            <user>ryan@couturemedspa.com</user>
+            <user>sara.katan@couturemedspa.com</user>
+            <user>tara.gillin@cms-franchise.com</user>
+            <user>sfdc+couturemedspa@growwithimg.com</user>
+            <user>todd.chase@cms-franchise.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

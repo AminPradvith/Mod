@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_Loss_dosage__c</fullName>
+    <label>Weight Loss dosage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>.25 mg</fullName>
+                <default>false</default>
+                <label>.25 mg</label>
+            </value>
+            <value>
+                <fullName>.5 mg</fullName>
+                <default>false</default>
+                <label>.5 mg</label>
+            </value>
+            <value>
+                <fullName>.75 mg</fullName>
+                <default>false</default>
+                <label>.75 mg</label>
+            </value>
+            <value>
+                <fullName>1.0 mg</fullName>
+                <default>false</default>
+                <label>1.0 mg</label>
+            </value>
+            <value>
+                <fullName>1.25 mg</fullName>
+                <default>false</default>
+                <label>1.25 mg</label>
+            </value>
+            <value>
+                <fullName>1.5 mg</fullName>
+                <default>false</default>
+                <label>1.5 mg</label>
+            </value>
+            <value>
+                <fullName>10 mg</fullName>
+                <default>false</default>
+                <label>10 mg</label>
+            </value>
+            <value>
+                <fullName>12.5 mg</fullName>
+                <default>false</default>
+                <label>12.5 mg</label>
+            </value>
+            <value>
+                <fullName>2.5 mg</fullName>
+                <default>false</default>
+                <label>2.5 mg</label>
+            </value>
+            <value>
+                <fullName>5 mg</fullName>
+                <default>false</default>
+                <label>5 mg</label>
+            </value>
+            <value>
+                <fullName>17.5 mg</fullName>
+                <default>false</default>
+                <label>17.5 mg</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
